@@ -23,7 +23,7 @@
 
 ### Phương pháp chấm
 
-- Nhãn chấm tay được soạn nháp với hỗ trợ AI (GLM qua OpenCode) đọc trực tiếp nội dung chunk trong results/scoring_material.txt và chấm theo đúng rubric GUIDE.md; học viên (tác giả pipeline) rà soát, chỉnh sửa nếu cần và chịu trách nhiệm cuối. Người chấm trùng tác giả pipeline nên có nguy cơ thiên lệch — đã ghi nhận trong báo cáo. Không dùng LLM judge tự động trên toàn bộ trace; mỗi nhãn kèm lý do đọc được.
+- Thực hiện theo GUIDE.md §4 (dòng 44-49). (1) Coherence: 10 vị trí nguồn chốt trước khi xem điểm — 10 trang gold đầu tiên của tập dev sắp xếp theo page ID, bỏ vị trí trùng trang (q04 trùng trang 22 với q03): q01, q02, q03, q05, q06, q07, q08, q09, q10, q11; chấm chunk chứa evidence gold theo rubric 0-2, công bố mẫu, nhãn, lý do và điểm trung bình /2. (2) Grounding: chấm top-3 của 5 câu test theo rubric 0-2, báo đủ số lượng từng mức và trung bình /2 kèm lý do. (3) Người chấm là tác giả pipeline — nguy cơ thiên lệch được ghi nhận. (4) Nhãn được soạn nháp với hỗ trợ AI (GLM qua OpenCode) đọc trực tiếp chunk trong results/scoring_material.txt, học viên rà soát và chịu trách nhiệm cuối — GUIDE cho phép dùng LLM hỗ trợ với điều kiện ghi rõ phương pháp (mục này) và có xem xét nhãn; mọi nhãn kèm lý do đọc được. (5) Coherence chấm độc lập với điểm truy xuất (chunk chỉ phụ thuộc tham số chunking); grounding bắt buộc đọc top-3 nên không mù điểm hoàn toàn — chỉ dùng flags từng chunk, không dựa vào số tổng hợp.
 - 0 = bị cắt giữa ý/thiếu chủ thể làm không hiểu; 1 = hiểu một phần, thiếu ngữ cảnh; 2 = tự hiểu được và giữ trọn ý
 - 0 = không có bằng chứng; 1 = có nhưng thiếu điều kiện/ngữ cảnh cần thiết; 2 = đủ để trả lời và truy nguồn
 - Vị trí nguồn chấm: 10 trang gold đầu tiên của tập dev (xác định trước khi xem điểm). Chunk nội dung chỉ phụ thuộc tham số chunking (không đổi khi đổi embedding model), nên nhãn coherence giữ giá trị qua hai lần chạy.
@@ -101,6 +101,8 @@ Kiểm tra tự động trên mọi trace top-3 + rà tay 5 câu test:
 
 - 100% top-3 giữ được `source` + `page` ở mọi chiến lược → truy vết về Công Báo luôn được.
 - A/B không áp filter nên compliance < 1.0 là đúng thiết kế (đo mức tuân thủ của kết quả khi người dùng có yêu cầu phạm vi); C = 1.0 nhờ filter SQL theo `section`, và mọi câu test có filter đều trả kết quả thuộc đúng phạm vi yêu cầu.
+- Trường hữu ích: `section` — giúp lọc phạm vi theo chương (cấu hình C) và cho biết ngữ cảnh chương của chunk ngay trong metadata.
+- Không phát hiện lỗi metadata trong 45 bản ghi kiểm tra (5 câu test × top-3 × 3 chiến lược). Hạn chế: `section` gán theo trang vật lý nên một trang chứa cả cuối chương trước và đầu chương sau sẽ mang section của chương mở đầu trên trang — metadata lệch biên ở các trang chuyển chương.
 
 ## Tiêu chí 4 — Chất lượng grounding (chấm thủ công, 5 câu test)
 

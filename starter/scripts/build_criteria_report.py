@@ -291,6 +291,8 @@ Kiểm tra tự động trên mọi trace top-3 + rà tay 5 câu test:
 
 - 100% top-3 giữ được `source` + `page` ở mọi chiến lược → truy vết về Công Báo luôn được.
 - A/B không áp filter nên compliance < 1.0 là đúng thiết kế (đo mức tuân thủ của kết quả khi người dùng có yêu cầu phạm vi); C = 1.0 nhờ filter SQL theo `section`, và mọi câu test có filter đều trả kết quả thuộc đúng phạm vi yêu cầu.
+- Trường hữu ích: `section` — giúp lọc phạm vi theo chương (cấu hình C) và cho biết ngữ cảnh chương của chunk ngay trong metadata.
+- Không phát hiện lỗi metadata trong 45 bản ghi kiểm tra (5 câu test × top-3 × 3 chiến lược). Hạn chế: `section` gán theo trang vật lý nên một trang chứa cả cuối chương trước và đầu chương sau sẽ mang section của chương mở đầu trên trang — metadata lệch biên ở các trang chuyển chương.
 
 ## Tiêu chí 4 — Chất lượng grounding (chấm thủ công, 5 câu test)
 
