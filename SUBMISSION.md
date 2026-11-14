@@ -1,4 +1,4 @@
-# Submission — bài cá nhân
+﻿# Submission — bài cá nhân
 
 ## Repo bài nộp
 
@@ -21,12 +21,12 @@ Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.
 
 ## Checklist
 
-- [ ] Dữ liệu ≥30 trang nội dung hợp lệ, manifest ghi nguồn, quyền, số trang và quy tắc tính.
-- [ ] ≥20 câu theo [BENCHMARK.md](BENCHMARK.md), có evidence đã kiểm chứng và tách tối thiểu 15 dev / 5 test trước thử nghiệm.
-- [ ] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình.
-- [ ] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark.
-- [ ] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian.
-- [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn.
-- [ ] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân.
-- [ ] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ.
+- [x] Dữ liệu ≥30 trang nội dung hợp lệ, manifest ghi nguồn, quyền, số trang và quy tắc tính. (168 vật lý / 166 hợp lệ — `data/manifest.json`)
+- [x] ≥20 câu theo [BENCHMARK.md](BENCHMARK.md), có evidence đã kiểm chứng và tách tối thiểu 15 dev / 5 test trước thử nghiệm. (22 câu = 17 dev / 5 test; 4 câu filter; verify 22/22 bằng `starter/scripts/verify_evidence.py`)
+- [x] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình. (google/embeddinggemma-2 768d local + PostgreSQL 16.16 / pgvector 0.8.7)
+- [x] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark. (A/B khác chunking; B/C chỉ khác filter)
+- [x] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian chạy. (`starter/results/`)
+- [x] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn. (`starter/results/criteria_report.md`, `manual_labels.json`)
+- [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân. (`starter/README.md`, `artifacts/experiment_log.csv`, `report/individual/2A202603823_DoQuocKhan.md`)
+- [x] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ. (`.env`, `models/` không nằm trong git — kiểm tra `git ls-files`)
 - [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.

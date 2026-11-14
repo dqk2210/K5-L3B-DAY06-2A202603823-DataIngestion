@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (cửa sổ ký tự),1000,150,"document_id, source, page, section, section_title, page_type, char_start, char_end",không,"google/embeddinggemma-2 (768d, local float32, sentence-transformers 6.3.0)","Cửa sổ ký tự có thể cắt giữa câu → coherence thấp và khó khớp evidence nguyên văn; dự kiến kém nhất","6/17 (0.3529)","13/17 (0.7647)","3/5 (0.60)","3/5 (0.60)","456 chunks; embed 166.9s; coherence 18/20; grounding 8/10; chi phí 0 USD"
+B,by_paragraph (gom đoạn, tách theo dòng trống),1200,0,"document_id, source, page, section, section_title, page_type",không,"google/embeddinggemma-2 (768d, local float32, sentence-transformers 6.3.0)","Chunk theo đoạn giữ trọn ý điều luật → Hit@1 và coherence cao hơn A, cùng tài nguyên","8/17 (0.4706)","13/17 (0.7647)","2/5 (0.40)","3/5 (0.60)","341 chunks; embed 149.4s; coherence 20/20; grounding 6/10; khác A duy nhất ở cách chia chunk"
+C,by_paragraph (giống B),1200,0,"document_id, source, page, section, section_title, page_type","section — chỉ áp dụng khi câu hỏi có filter (input giả định cung cấp trước)","google/embeddinggemma-2 (768d, local float32, sentence-transformers 6.3.0)","Filter section loại nhiễu liên chương → filter compliance 1.0 và EvHit@3 test cao nhất; khác B duy nhất ở filter","9/17 (0.5294)","13/17 (0.7647)","2/5 (0.40)","4/5 (0.80)","341 chunks; embed 145.4s; coherence 20/20 (cùng chunk B); grounding 8/10; chi phí 0 USD"
