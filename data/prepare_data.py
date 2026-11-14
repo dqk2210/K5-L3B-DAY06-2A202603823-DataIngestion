@@ -45,7 +45,9 @@ FILES = [
 MIN_CHARS_VALID = 800   # trang >= 800 ký tự text chuẩn hóa -> tính là nội dung
 MIN_CHARS_BLANK = 200   # trang < 200 ký tự -> trống/ apenas header
 
-CHUONG_RE = re.compile(r"Chương\s+([IVX]+)\s*\n\s*([^\n]+)")
+# Heading thật nằm riêng một dòng ("Chương IV"); tham chiếu thân bài
+# ("Mục 1 Chương III") phải bị loại. Title heading là dòng CHỮ IN HOA kế tiếp.
+CHUONG_RE = re.compile(r"^Chương\s+([IVX]+)[ \t]*$", re.M)
 DIEU_RE = re.compile(r"Điều\s*(\d+)\.")
 # Lỗi font PDF tiếng Việt: khoảng trắng lọt giữa chữ cái và ký tự mang dấu
 BROKEN_SPACE_RE = re.compile(r"[a-zà-ỹ] [ớừảệộổ]")
@@ -108,12 +110,19 @@ def main() -> None:
                 # cập nhật Chương hiện hành (giữ trạng thái liên tục giữa 2 file)
                 for m in CHUONG_RE.finditer(raw):
                     roman = m.group(1)
-                    title = normalize(m.group(2)).strip(": ").upper()
+                    # title = dòng không rỗng kế sau heading; chỉ nhận nếu IN HOA
+                    title_line = ""
+                    for line in raw[m.end() :].split("\n"):
+                        if line.strip():
+                            title_line = line.strip()
+                            break
+                    if not title_line or title_line != title_line.upper():
+                        continue  # tham chiếu trong thân bài, không phải heading
                     key = roman
                     if key not in seen_chuong:
                         seen_chuong.add(key)
-                        all_chuong.append({"chuong": roman, "tieu_de": title})
-                    current_chuong = (f"chuong_{roman.lower()}", title)
+                        all_chuong.append({"chuong": roman, "tieu_de": title_line})
+                    current_chuong = (f"chuong_{roman.lower()}", title_line)
 
                 for m in DIEU_RE.finditer(text):
                     dieu_file.add(int(m.group(1)))
