@@ -26,7 +26,7 @@
     "tool": "pymupdf (fitz)",
     "pymupdf_version": "2.1",
     "python_version": "3.12.10",
-    "ngay_chay": "2026-11-14T03:43:04+00:00",
+    "ngay_chay": "2026-11-14T03:57:33+00:00",
     "don_vi_xuat": "text theo trang, UTF-8, chuẩn hóa khoảng trắng",
     "ghi_nhan_loi": "Sót lại 2 vị trí lỗi khoảng trắng dấu tiếng Việt trên toàn corpus (lỗi font PDF: dấu bị tách thành glyph riêng). So sánh: pypdf sinh ~2.000 lỗi tương tự trên cùng file -> chọn pymupdf. Không có trang nào là scan (toàn bộ extract được text)."
   },
