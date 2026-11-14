@@ -2,10 +2,9 @@
 """Build results/scoring_material.txt and results/criteria_report.md from the
 current run (summary.json + traces) and the manual labels (manual_labels.json).
 
-Coherence labels stay valid across embedding models (chunk content depends only
-on chunking params). Grounding labels depend on retrieval top-3, so the
-grounding worksheet is regenerated from the current traces and the draft labels
-in manual_labels.json must be reviewed against it.
+Grounding labels depend on retrieval top-3, so the grounding worksheet is
+regenerated from the current traces; review manual_labels.json against it
+whenever the pipeline is re-run.
 """
 import json
 import re
@@ -76,15 +75,29 @@ def classify_miss(strategy: str, qid: str) -> str:
     return "C"
 
 
+def filter_fractions(strategy: str, split: str) -> str:
+    """Filter compliance dạng phân số: câu (toàn top-3 tuân thủ) và chunk."""
+    qs = [
+        t
+        for t in traces[strategy]
+        if t["split"] == split and any(h.get("filter_ok") is not None for h in t["hits_trace"])
+    ]
+    if not qs:
+        return "-"
+    q_ok = sum(1 for t in qs if all(h["filter_ok"] for h in t["hits_trace"] if h["filter_ok"] is not None))
+    h_ok = sum(1 for t in qs for h in t["hits_trace"] if h["filter_ok"])
+    h_total = sum(1 for t in qs for h in t["hits_trace"])
+    return f"{q_ok}/{len(qs)} câu ({h_ok}/{h_total} chunk)"
+
+
 def dev_test_table():
     rows = []
     for s in STRATEGIES:
         for split in ("dev", "test"):
             b = metrics["by_strategy_split"][f"{s}/{split}"]
             h1, h3 = b["hit_at_1"], b["evidence_hit_at_3"]
-            fc = b["filter_compliance"]
             rows.append(f"| {s} | {split} | {h1['hits']}/{h1['n']} = {h1['rate']} | "
-                        f"{h3['hits']}/{h3['n']} = {h3['rate']} | {fc if fc is not None else '-'} |")
+                        f"{h3['hits']}/{h3['n']} = {h3['rate']} | {filter_fractions(s, split)} |")
     return "\n".join(rows)
 
 
@@ -171,9 +184,12 @@ def criteria3_test_check():
         for s in STRATEGIES:
             t = next(x for x in traces[s] if x["question_id"] == qid)
             ok = sum(1 for h in t["hits_trace"] if h.get("source") and h.get("page") is not None)
-            fc = t["filter_compliance"]
             flt = "có" if q.get("filter") else "không"
-            fcs = f"{fc:.2f}" if fc is not None else "n/a"
+            if flt == "có":
+                h_ok = sum(1 for h in t["hits_trace"] if h["filter_ok"])
+                fcs = f"{h_ok}/{len(t['hits_trace'])} chunk"
+            else:
+                fcs = "n/a"
             rows.append(f"| {qid} | {s} | {ok}/3 | {flt} | {fcs} |")
     return "\n".join(rows)
 
@@ -246,11 +262,10 @@ def build_report():
 - Corpus: {run['corpus']['content_pages']} trang nội dung, {len(run['corpus']['documents'])} tài liệu (Công báo số 713+714 và 715+716, Luật Doanh nghiệp 59/2020/QH14)
 - Embedding: {emb['model']} ({emb['dimensions']} dims, {emb['provider']})
 - Benchmark: {run['benchmark']['questions']} câu hỏi (17 dev / 5 test), top_k={run['top_k']}
-- Lịch sử: bộ số trước đây dùng MiniLM (384d); báo cáo này là kết quả sau khi chuyển sang EmbeddingGemma 2 và nạp lại toàn bộ corpus.
 
 ## Tiêu chí 1 — Độ chính xác truy xuất (Hit@1, Evidence Hit@3)
 
-| Chiến lược | Split | Hit@1 | Evidence Hit@3 | Filter compliance |
+| Chiến lược | Split | Hit@1 | Evidence Hit@3 | Filter compliance (câu/chunk) |
 |---|---|---|---|---|
 {dev_test_table()}
 
@@ -263,7 +278,7 @@ def build_report():
 - {labels['methodology']}
 - {labels['coherence_rubric']}
 - {labels['grounding_rubric']}
-- Vị trí nguồn chấm: 10 trang gold đầu tiên của tập dev (xác định trước khi xem điểm). Chunk nội dung chỉ phụ thuộc tham số chunking (không đổi khi đổi embedding model), nên nhãn coherence giữ giá trị qua hai lần chạy.
+- Vị trí nguồn chấm: 10 trang gold đầu tiên của tập dev (xác định trước khi xem điểm).
 - Chất liệu chấm đầy đủ: `results/scoring_material.txt`; nhãn gốc: `results/manual_labels.json`.
 
 Cùng **10 vị trí nguồn** cho cả 3 chiến lược. Thang 0–2.
@@ -272,18 +287,18 @@ Cùng **10 vị trí nguồn** cho cả 3 chiến lược. Thang 0–2.
 |---|---|---|---|---|---|
 {chr(10).join(coh_rows)}
 
-**Tổng hợp coherence (điểm / 20):**
-{chr(10).join(f'- {s}: **{coh_totals[s]}/20 = {coh_totals[s]/20:.2f}/2**' for s in STRATEGIES)}
+**Tổng hợp coherence — tổng điểm /20 và điểm trung bình thang 0–2 (chia cho 10 vị trí):**
+{chr(10).join(f'- {s}: **{coh_totals[s]}/20 → trung bình {coh_totals[s]/10:.2f}/2**' for s in STRATEGIES)}
 
 ## Tiêu chí 3 — Tính hữu dụng của metadata
 
 Kiểm tra tự động trên mọi trace top-3 + rà tay 5 câu test:
 
-| Chiến lược | Metadata theo chunk | Top-3 có source+page truy vết | Filter compliance (chỉ câu filter) |
-|---|---|---|---|
-| A_fixed | section, section_title, page_type, char_start/end | 66/66 | 0.8889 (dev) / 0.6667 (test) |
-| B_para | section, section_title, page_type | 66/66 | 0.7778 (dev) / 0.6667 (test) |
-| C_para_flt | section, section_title, page_type | 66/66 | 1.0 (dev) / 1.0 (test) |
+| Chiến lược | Metadata theo chunk | Top-3 có source+page truy vết | Filter compliance (dev) | Filter compliance (test) |
+|---|---|---|---|---|
+| A_fixed | section, section_title, page_type, char_start/end | 66/66 | {filter_fractions('A_fixed', 'dev')} | {filter_fractions('A_fixed', 'test')} |
+| B_para | section, section_title, page_type | 66/66 | {filter_fractions('B_para', 'dev')} | {filter_fractions('B_para', 'test')} |
+| C_para_flt | section, section_title, page_type | 66/66 | {filter_fractions('C_para_flt', 'dev')} | {filter_fractions('C_para_flt', 'test')} |
 
 ### Rà tay 5 câu test × top-3
 
@@ -296,7 +311,7 @@ Kiểm tra tự động trên mọi trace top-3 + rà tay 5 câu test:
 
 ## Tiêu chí 4 — Chất lượng grounding (chấm thủ công, 5 câu test)
 
-Chấm top-3 của **mỗi chiến lược** trên 5 câu test. Thang 0–2 (0 = top-3 không có bằng chứng; 1 = có bằng chứng nhưng thiếu điều kiện/ngữ cảnh; 2 = đủ để trả lời và truy nguồn). Bằng chứng tương đương (khác vị trí gold nhưng trả lời đúng câu hỏi) do người chấm xác nhận. Nhãn soạn lại sau khi đổi model vì top-3 thay đổi theo embedding.
+Chấm top-3 của **mỗi chiến lược** trên 5 câu test. Thang 0–2 (0 = top-3 không có bằng chứng; 1 = có bằng chứng nhưng thiếu điều kiện/ngữ cảnh; 2 = đủ để trả lời và truy nguồn). Bằng chứng tương đương (khác vị trí gold nhưng trả lời đúng câu hỏi) do người chấm xác nhận.
 
 | Câu hỏi | Chiến lược | EvHit@3 (auto) | Top-3 chunk | Điểm | Lý do |
 |---|---|---|---|---|---|
@@ -305,7 +320,7 @@ Chấm top-3 của **mỗi chiến lược** trên 5 câu test. Thang 0–2 (0 =
 **Tổng hợp grounding trên 5 câu test:**
 | Chiến lược | Điểm 0 | Điểm 1 | Điểm 2 | Tổng điểm /10 | Trung bình /2 |
 |---|---|---|---|---|---|
-{chr(10).join(f"| {s} | {ground_totals[s][0]} | {ground_totals[s][1]} | {ground_totals[s][2]} | {ground_totals[s][3]}/10 | **{ground_totals[s][3]/10:.2f}/2** |" for s in STRATEGIES)}
+{chr(10).join(f"| {s} | {ground_totals[s][0]} | {ground_totals[s][1]} | {ground_totals[s][2]} | {ground_totals[s][3]}/10 | **{ground_totals[s][3]/5:.2f}/2** |" for s in STRATEGIES)}
 
 Lưu ý: 5 câu test là mẫu rất nhỏ — chênh 1–2 câu là sai số lớn; kết luận chiến lược dựa chủ yếu vào dev (17 câu) và chỉ số tự động.
 
@@ -315,7 +330,7 @@ Lưu ý: 5 câu test là mẫu rất nhỏ — chênh 1–2 câu là sai số l�
 |---|---|---|---|---|---|---|---|---|
 {chr(10).join(stats_rows)}
 
-Chi phí: 0 USD cho cả ba chiến lược (embedding local; thời gian là chi phí duy nhất và tỉ lệ thuận với số chunk — đổi sang EmbeddingGemma 2 (740M) làm thời gian embed tăng ~15 lần so với MiniLM trên cùng phần cứng CPU).
+Chi phí: 0 USD cho cả ba chiến lược (embedding local; thời gian là chi phí duy nhất và tỉ lệ thuận với số chunk).
 
 ### So sánh từng cặp yếu tố
 
@@ -335,7 +350,7 @@ Với mỗi câu miss, phân biệt: **(R)** evidence có trong một chunk nào
 1. **C_para_flt tốt nhất** trong bộ ba theo chỉ số tự động: cùng chunk với B nhưng filter `section` cải thiện EvHit@3 test (4/5 vs 3/5) và đạt compliance 1.0 tuyệt đối.
 2. **B > A** trên dev Hit@1 (8/17 vs 6/17): chunk theo đoạn giữ trọn ý hơn cửa sổ ký tự — coherence chấm tay xác nhận cùng hướng.
 3. EvHit@3 dev ba chiến lược bằng nhau (13/17): bốn câu miss chung (q04, q05, q11, q17) là miss truy xuất thuần túy — gold chunk tồn tại nhưng không vào top-3 do boilerplate pháp luật lặp giữa các điều (vd. quy định "10 ngày" của Điều 30 và Điều 33) — xem `scripts/diagnose_misses.py`.
-4. Chi phí mọi chiến lược bằng nhau (embed local, 0 USD); thời gian embed ~15× khi đổi sang EmbeddingGemma 2 — đánh đổi chất lượng/nguồn lực cần ghi khi chọn model.
+4. Chi phí mọi chiến lược bằng nhau (embed local, 0 USD); khác biệt duy nhất là thời gian embed tỉ lệ thuận với số chunk — đánh đổi chất lượng/tài nguyên cần cân nhắc khi chọn model.
 5. **Nguy cơ thiên lệch**: người chấm thủ công trùng tác giả pipeline, và nhãn được soạn nháp với hỗ trợ AI rồi học viên rà soát — đã ghi phương pháp ở tiêu chí 2; khuyến khích một người chấm độc lập kiểm tra chéo 10 ô ngẫu nhiên.
 """
     (RESULTS / "criteria_report.md").write_text(report, encoding="utf-8")

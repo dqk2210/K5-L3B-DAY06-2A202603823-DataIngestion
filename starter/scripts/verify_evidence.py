@@ -24,9 +24,6 @@ def squash(text: str) -> str:
 pages = [json.loads(l) for l in PAGES.open(encoding="utf-8")]
 # key theo (document_id, page): hai file Cong Bao co so trang trung nhau
 page_squash = {(p["document_id"], p["page"]): squash(p["text"]) for p in pages}
-page_raw = {(p["document_id"], p["page"]): p["text"] for p in pages}
-
-KEYWORD_MIN = 5  # độ dài từ tối thiểu để làm từ khóa định vị
 
 questions = [json.loads(l) for l in QUESTIONS.open(encoding="utf-8") if l.strip()]
 for q in questions:

@@ -147,7 +147,9 @@ def main() -> None:
     strategy_stats: dict[str, dict] = {}
     for strategy in strategies:
         t = time.perf_counter()
-        chunks = build_chunks(strategy, pages)
+        # chỉ chunk trang nội dung hợp lệ (noi_dung, >=800 ký tự) — loại trừ
+        # mục lục, trang trống và trang ngắn để không đưa nhiễu vào vector store
+        chunks = build_chunks(strategy, content_pages)
         vectors = embedder.embed_documents([c.text for c in chunks])
         store.upsert(strategy, chunks, vectors)
         stored = store.count(strategy)

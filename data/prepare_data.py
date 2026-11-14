@@ -62,11 +62,18 @@ def normalize(text: str) -> str:
 
 
 def classify_page(chars: int, text: str) -> str:
-    """Phân loại trang: muc_luc / rong / noi_dung."""
+    """Phân loại trang: muc_luc / rong / ngan / noi_dung.
+
+    Trang 200-799 ký tự (ví dụ đuôi Công báo, trang chuyển tiếp) được đánh dấu
+    "ngan" — có text nhưng KHÔNG tính vào trang nội dung hợp lệ (quy tắc
+    manifest: >= 800 ký tự), để đồng bộ pages.jsonl với so_trang trong manifest.
+    """
     if "MỤC LỤC" in text.upper():
         return "muc_luc"
     if chars < MIN_CHARS_BLANK:
         return "rong"
+    if chars < MIN_CHARS_VALID:
+        return "ngan"
     return "noi_dung"
 
 
@@ -187,8 +194,10 @@ def main() -> None:
         },
         "so_trang": {
             "quy_tac_tinh": (
-                "Trang nội dung hợp lệ = trang có >= 800 ký tự text đã chuẩn hóa. "
-                "Loại: trang trống/chỉ còn header (<200 ký tự) và trang mục lục."
+                "Trang nội dung hợp lệ = trang có >= 800 ký tự text đã chuẩn hóa "
+                "(đồng bộ với page_type='noi_dung' trong pages.jsonl). "
+                "Loại: trang trống/chỉ còn header (<200 ký tự), trang mục lục, "
+                "và trang ngắn 200-799 ký tự (page_type='ngan')."
             ),
             "tong_so_trang_vat_ly": sum(f["pages_physical"] for f in file_stats),
             "tong_so_trang_noi_dung_hop_le": sum(f["pages_valid"] for f in file_stats),
@@ -227,7 +236,7 @@ def main() -> None:
                 "page": "số trang (1-based)",
                 "section": "slug chương đang hiệu lực trên trang",
                 "section_title": "tên chương",
-                "page_type": "noi_dung | muc_luc | rong",
+                "page_type": "noi_dung | ngan (200-799 ky tu) | muc_luc | rong",
                 "chars": "số ký tự đã chuẩn hóa",
                 "text": "nội dung trang",
             },

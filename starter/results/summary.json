@@ -176,10 +176,10 @@
     }
   },
   "run": {
-    "ran_at": "2026-11-14T05:26:42+00:00",
+    "ran_at": "2026-11-14T08:01:52+00:00",
     "corpus": {
       "pages_loaded": 168,
-      "content_pages": 167,
+      "content_pages": 166,
       "source": "D:\\AI20k\\K5-L3B-DAY06-2A202603823-DataIngestion\\data\\extracted\\pages.jsonl",
       "documents": [
         "ldn-2020-congbao-p1",
@@ -203,24 +203,24 @@
       },
       "stats": {
         "A_fixed": {
-          "chunks_built": 456,
-          "chunks_stored": 456,
+          "chunks_built": 455,
+          "chunks_stored": 455,
           "avg_chars": 809,
-          "embed_seconds": 166.9,
+          "embed_seconds": 202.5,
           "applies_query_filter": false
         },
         "B_para": {
-          "chunks_built": 341,
-          "chunks_stored": 341,
-          "avg_chars": 954,
-          "embed_seconds": 149.4,
+          "chunks_built": 340,
+          "chunks_stored": 340,
+          "avg_chars": 956,
+          "embed_seconds": 176.4,
           "applies_query_filter": false
         },
         "C_para_flt": {
-          "chunks_built": 341,
-          "chunks_stored": 341,
-          "avg_chars": 954,
-          "embed_seconds": 145.4,
+          "chunks_built": 340,
+          "chunks_stored": 340,
+          "avg_chars": 956,
+          "embed_seconds": 168.2,
           "applies_query_filter": true
         }
       },

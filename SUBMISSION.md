@@ -27,6 +27,6 @@ Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.
 - [x] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark. (A/B khác chunking; B/C chỉ khác filter)
 - [x] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian chạy. (`starter/results/`)
 - [x] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn. (`starter/results/criteria_report.md`, `manual_labels.json`)
-- [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân. (`starter/README.md`, `artifacts/experiment_log.csv`, `report/individual/2A202603823_DoQuocKhan.md`)
+- [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân. (`starter/README.md`, `artifacts/experiment_log.csv`, `report/individual/2A202603823_DoQuocKhanh.md`)
 - [x] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ. (`.env`, `models/` không nằm trong git — kiểm tra `git ls-files`)
 - [x] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.

@@ -6,6 +6,9 @@ from pathlib import Path
 import psycopg
 from dotenv import load_dotenv
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")  # Windows console defaults to cp1252
+
 load_dotenv(Path(__file__).resolve().parents[1] / '.env')
 url = os.getenv('DATABASE_URL')
 if not url:
@@ -20,4 +23,4 @@ try:
             print(f'Database: {row[0]} | PostgreSQL: {row[1]} | pgvector: {row[2]}')
 except psycopg.Error:
     sys.exit('Database connection failed. Check Docker, port and DATABASE_URL in starter/.env.')
-print('Setup OK. Pipeline functions still need to be implemented.')
+print('Setup OK. Hạ tầng sẵn sàng — chạy pipeline: python -m src.run')

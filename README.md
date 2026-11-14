@@ -1,47 +1,60 @@
-# Day 06 · Data Ingestion Engineering
+# Day 06 · Data Ingestion Engineering — Pipeline RAG cho Luật Doanh nghiệp 2020
 
-**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
+**Lab cá nhân · Lớp L3B · MSSV 2A202603823 — Đỗ Quốc Khánh**
 
-Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
+Biến 168 trang Công báo Luật Doanh nghiệp 59/2020/QH14 thành kho tri thức truy xuất được: trích xuất theo trang, chunk theo 3 chiến lược, embedding local (EmbeddingGemma 2), lưu PostgreSQL + pgvector, benchmark 22 câu hỏi và đánh giá theo 5 tiêu chí.
 
-| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
-|---|---|---|
-| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+## Tóm tắt kết quả
 
-## Bắt đầu nhanh
+| Chiến lược | Hit@1 dev | EvHit@3 dev | EvHit@3 test | Filter compliance | Coherence /2 | Grounding /2 |
+|---|---|---|---|---|---|---|
+| A_fixed (cửa sổ 1000 ký tự) | 6/17 | 13/17 | 3/5 | 2/3 câu (8/9 chunk) dev | 1.80 | 1.60 |
+| B_para (theo đoạn) | 8/17 | 13/17 | 3/5 | 2/3 câu (7/9 chunk) dev | 2.00 | 1.20 |
+| **C_para_flt (B + filter section)** | **9/17** | **13/17** | **4/5** | **3/3 câu (9/9 chunk)** | **2.00** | **1.60** |
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+**Chọn C_para_flt** (chốt tiêu chí trước khi xem test: EvHit@3 → Hit@1 → filter compliance → tài nguyên). Chi tiết: [`report/individual/2A202603823_DoQuocKhanh.md`](report/individual/2A202603823_DoQuocKhanh.md) và [`starter/results/criteria_report.md`](starter/results/criteria_report.md).
 
-## 1. Xây pipeline
+## Chạy nhanh
 
-![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+```bash
+# 1. Cơ sở dữ liệu (cần Docker)
+cd starter
+python -m venv .venv && .venv\Scripts\Activate.ps1    # Windows; macOS: source .venv/bin/activate
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py                         # Setup OK
 
-Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
+# 2. Dữ liệu + model (chạy 1 lần)
+cd .. && python data/prepare_data.py                  # → data/extracted/pages.jsonl + manifest
+cd starter && python scripts/download_model.py        # → models/embeddinggemma-2 (local)
 
-## 2. So sánh và đánh giá
+# 3. Pipeline + benchmark + báo cáo (luôn dùng .venv)
+python -m src.run                                     # ~10 phút CPU
+python scripts/verify_evidence.py                     # 22/22 evidence OK
+python scripts/build_criteria_report.py               # → results/criteria_report.md
+```
 
-![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+Lưu ý: chạy pipeline bằng Python của `.venv` — hệ thống thiếu Pillow sẽ lỗi load processor EmbeddingGemma 2. Chi tiết từng bước: [`starter/README.md`](starter/README.md).
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
+## Cấu trúc repo
 
-Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
+```text
+data/               # PDF gốc Công báo + prepare_data.py + extracted/pages.jsonl + manifest.json
+benchmark/          # questions.jsonl — 22 câu (17 dev / 5 test, 4 câu filter)
+starter/src/        # pipeline: ingestion → chunking → embeddings → store → evaluation → run
+starter/results/    # summary.json, traces, criteria_report.md, manual_labels.json
+report/individual/  # báo cáo cá nhân theo mẫu
+artifacts/          # experiment_log.csv
+```
 
-## 3. Chuẩn bị bài nộp
-
-1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
-3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
-
-## Tài liệu hướng dẫn
+## Tài liệu đề bài
 
 | Bạn cần tìm | Tài liệu |
 |---|---|
-| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
+| Setup và cách chạy chi tiết | [starter/README.md](starter/README.md) |
 | Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
-| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
 | Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
 | Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
-
-[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.

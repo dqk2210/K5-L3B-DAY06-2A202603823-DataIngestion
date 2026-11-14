@@ -18,7 +18,7 @@
     "muc_dich": "Học liệu cá nhân cho lab Data Ingestion Engineering, phi thương mại."
   },
   "so_trang": {
-    "quy_tac_tinh": "Trang nội dung hợp lệ = trang có >= 800 ký tự text đã chuẩn hóa. Loại: trang trống/chỉ còn header (<200 ký tự) và trang mục lục.",
+    "quy_tac_tinh": "Trang nội dung hợp lệ = trang có >= 800 ký tự text đã chuẩn hóa (đồng bộ với page_type='noi_dung' trong pages.jsonl). Loại: trang trống/chỉ còn header (<200 ký tự), trang mục lục, và trang ngắn 200-799 ký tự (page_type='ngan').",
     "tong_so_trang_vat_ly": 168,
     "tong_so_trang_noi_dung_hop_le": 166
   },
@@ -26,7 +26,7 @@
     "tool": "pymupdf (fitz)",
     "pymupdf_version": "2.1",
     "python_version": "3.12.10",
-    "ngay_chay": "2026-11-14T03:57:33+00:00",
+    "ngay_chay": "2026-11-14T07:50:37+00:00",
     "don_vi_xuat": "text theo trang, UTF-8, chuẩn hóa khoảng trắng",
     "ghi_nhan_loi": "Sót lại 2 vị trí lỗi khoảng trắng dấu tiếng Việt trên toàn corpus (lỗi font PDF: dấu bị tách thành glyph riêng). So sánh: pypdf sinh ~2.000 lỗi tương tự trên cùng file -> chọn pymupdf. Không có trang nào là scan (toàn bộ extract được text)."
   },
@@ -115,7 +115,7 @@
       "page": "số trang (1-based)",
       "section": "slug chương đang hiệu lực trên trang",
       "section_title": "tên chương",
-      "page_type": "noi_dung | muc_luc | rong",
+      "page_type": "noi_dung | ngan (200-799 ky tu) | muc_luc | rong",
       "chars": "số ký tự đã chuẩn hóa",
       "text": "nội dung trang"
     }

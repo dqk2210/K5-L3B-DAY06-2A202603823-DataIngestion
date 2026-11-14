@@ -101,9 +101,35 @@ SPECS = [
 ]
 
 
+# Đáp án ngắn gọn, trọn nghĩa cho từng câu (trích nguồn điều luật trong ngoặc).
+ANSWERS = {
+    "q01": "Ba phương thức: trực tiếp tại Cơ quan đăng ký kinh doanh, qua dịch vụ bưu chính, hoặc qua mạng thông tin điện tử (Điều 26 k1).",
+    "q02": "Bốn điều kiện: ngành nghề không bị cấm đầu tư kinh doanh; tên đặt đúng quy định các Điều 37, 38, 39, 41; có hồ sơ đăng ký hợp lệ; nộp đủ lệ phí (Điều 27 k1).",
+    "q03": "Không. Mỗi doanh nghiệp có một mã số duy nhất và không được sử dụng lại để cấp cho doanh nghiệp khác (Điều 29 k1).",
+    "q04": "Trong thời hạn 10 ngày kể từ ngày có thay đổi (Điều 30 k2).",
+    "q05": "Hai thành tố theo thứ tự: loại hình doanh nghiệp và tên riêng (Điều 37 k1).",
+    "q06": "Đặt trên lãnh thổ Việt Nam; là địa chỉ liên lạc của doanh nghiệp, xác định theo địa giới đơn vị hành chính, có số điện thoại, số fax và thư điện tử nếu có (Điều 42).",
+    "q07": "Tối đa 50 thành viên là tổ chức, cá nhân (tối thiểu 02) (Điều 46 k1).",
+    "q08": "Khi đã bỏ phiếu không tán thành nghị quyết, quyết định của Hội đồng thành viên về: sửa đổi Điều lệ liên quan quyền/nghĩa vụ thành viên, HĐTV; tổ chức lại công ty; hoặc trường hợp khác theo Điều lệ (Điều 51 k1).",
+    "q09": "Có. Giám đốc/Tổng giám đốc của DNNN và công ty con của DNNN không được là người có quan hệ gia đình của người quản lý công ty, Kiểm soát viên của công ty và của công ty mẹ (Điều 64 k3).",
+    "q10": "Chỉ được chia lợi nhuận sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo pháp luật, bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn sau khi chia (Điều 69).",
+    "q11": "Không, trừ trường hợp để chuyển đổi thành công ty cổ phần (Điều 74 k3).",
+    "q12": "Được tổ chức quản lý dưới hình thức công ty trách nhiệm hữu hạn hoặc công ty cổ phần, gồm doanh nghiệp Nhà nước nắm giữ 100% vốn điều lệ hoặc nắm trên 50% vốn điều lệ/tổng số cổ phần có quyền biểu quyết (Điều 88 k1).",
+    "q13": "Bốn loại: cổ phần ưu đãi cổ tức, ưu đãi hoàn lại, ưu đãi biểu quyết, và ưu đãi khác theo Điều lệ công ty và pháp luật chứng khoán (Điều 114 k2).",
+    "q14": "Khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác; đã trích lập các quỹ công ty và bù đắp lỗ trước đó; và bảo đảm thanh toán đủ các khoản nợ đến hạn ngay sau khi trả cổ tức (Điều 135 k2).",
+    "q15": "Khi có số cổ đông dự họp đại diện trên 50% tổng số phiếu biểu quyết; tỷ lệ cụ thể do Điều lệ công ty quy định (Điều 145 k1).",
+    "q16": "Từ 65% tổng số phiếu biểu quyết trở lên của tất cả cổ đông dự họp tán thành; tỷ lệ cụ thể do Điều lệ quy định (Điều 148 k1).",
+    "q17": "Thành viên hợp danh phải là cá nhân và chịu trách nhiệm bằng toàn bộ tài sản của mình về các nghĩa vụ của công ty (Điều 177 k1).",
+    "q18": "Không. Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào (Điều 188 k2).",
+    "q19": "06 tháng liên tục không còn đủ số lượng thành viên tối thiểu mà không làm thủ tục chuyển đổi loại hình doanh nghiệp (Điều 207 k1c).",
+    "q20": "Một trong ba trường hợp: sở hữu trên 50% vốn điều lệ hoặc tổng số cổ phần phổ thông; có quyền trực tiếp/gián tiếp quyết định bổ nhiệm đa số hoặc tất cả thành viên HĐQT, Giám đốc/Tổng giám đốc; có quyền quyết định sửa đổi, bổ sung Điều lệ (Điều 195 k1).",
+    "q21": "Tối thiểu 03 cổ đông và không hạn chế số lượng tối đa (Điều 111 k1b).",
+    "q22": "Doanh nghiệp được cấp lại Giấy chứng nhận đăng ký doanh nghiệp và phải nộp lệ phí theo quy định của pháp luật (Điều 27 k2).",
+}
+
+
 def main() -> None:
-    pages = [json.loads(line) for line in PAGES_PATH.open(encoding="utf-8") if line.strip()]
-    # squashed page text for whitespace-insensitive anchor lookup
+    pages = [json.loads(line) for line in PAGES_PATH.open(encoding="utf-8") if line.strip()]    # squashed page text for whitespace-insensitive anchor lookup
     index: list[tuple[dict, str]] = [(p, squash(p["text"])) for p in pages]
 
     questions: list[dict] = []
@@ -130,9 +156,7 @@ def main() -> None:
         }
         if filt:
             q["filter"] = filt
-            q["expected_answer"] = f"(theo {anchor[:80]}... — xem gold_source/gold_page)"
-        else:
-            q["expected_answer"] = f"(theo evidence: {anchor[:100]}...)"
+        q["expected_answer"] = ANSWERS[qid]
         questions.append(q)
 
     if problems:

@@ -1,9 +1,7 @@
 """Read and normalize source data for the LDN 2020 (Cong Bao) corpus.
 
-Two supported sources:
-- data/extracted/pages.jsonl : page-level extraction produced by data/prepare_data.py
-                               (pymupdf, per-page text, section tracking). Preferred.
-- raw PDF files              : extracted here with pymupdf on the fly.
+Source: data/extracted/pages.jsonl — page-level extraction produced by
+data/prepare_data.py (pymupdf, per-page text, section tracking).
 
 Every page keeps its document_id, source path and physical page number so
 chunks stay traceable to the source (required by the lab manifest).
@@ -12,8 +10,6 @@ import json
 import re
 import unicodedata
 from pathlib import Path
-
-import pymupdf
 
 from .models import DocumentPage
 
@@ -76,26 +72,3 @@ def load_pages_jsonl(path: Path) -> list[DocumentPage]:
                 )
             )
     return strip_recurring_headers(pages)
-
-
-def load_pdf(path: Path, document_id: str, source: str) -> list[DocumentPage]:
-    """Extract each physical page with pymupdf; keep page number and source.
-
-    Pages with no extractable text are kept and flagged metadata["empty"]=True
-    (scanned pages would need OCR as a separate step).
-    """
-    pages: list[DocumentPage] = []
-    with pymupdf.open(path) as doc:
-        for i in range(len(doc)):
-            text = normalize_text(doc[i].get_text())
-            meta: dict = {"empty": len(text) == 0}
-            pages.append(
-                DocumentPage(
-                    document_id=document_id,
-                    source=source,
-                    page=i + 1,
-                    text=text,
-                    metadata=meta,
-                )
-            )
-    return pages

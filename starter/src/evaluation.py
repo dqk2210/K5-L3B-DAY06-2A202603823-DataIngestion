@@ -145,9 +145,11 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
             {
                 "rank": rank,
                 "chunk_id": hit.get("chunk_id"),
+                "document_id": hit.get("document_id"),
                 "score": round(float(hit.get("score", 0.0)), 6),
                 "source": hit.get("source"),
                 "page": hit.get("page"),
+                "metadata": hit.get("metadata") or {},
                 "hit": is_hit,
                 "evidence_found": _evidence_found(hit.get("text", ""), question.get("evidence_quote")),
                 "filter_ok": filter_ok,
