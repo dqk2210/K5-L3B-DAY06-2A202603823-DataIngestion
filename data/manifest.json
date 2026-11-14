@@ -1,0 +1,123 @@
+{
+  "corpus_id": "ldn-2020",
+  "title": "Luật Doanh nghiệp số 59/2020/QH14",
+  "so_hieu": "59/2020/QH14",
+  "loai_van_ban": "Luật (văn bản quy phạm pháp luật)",
+  "co_quan_ban_hanh": "Quốc hội",
+  "ngay_ban_hanh": "2020-06-17",
+  "ngay_hieu_luc": "2021-01-01",
+  "nguon": {
+    "trang_van_ban": "https://congbao.chinhphu.vn/van-ban/luat-so-59-2020-qh14-31674.htm",
+    "cach_lay": "Tải trực tiếp file PDF bản in Công báo từ CDN chính thức congbaocdn.chinhphu.vn (link trong từng file bên dưới) bằng curl -L."
+  },
+  "quyen_su_dung": {
+    "trang_thai": "Được phép xử lý, trích xuất, tái sử dụng.",
+    "co_so": "Văn bản quy phạm pháp luật không được bảo hộ quyền tác giả (Luật Sở hữu trí tuệ 2005, sửa đổi bổ sung 2022 — Điều 13). Bản dùng là bản in Công báo chính thức do Văn phòng Chính phủ công bố.",
+    "yeu_cau": "Ghi rõ nguồn Công báo (số, ngày) khi trích dẫn/tái sử dụng.",
+    "ghi_chu": "Chỉ dùng bản gốc Công báo của Chính phủ; không dùng bản hợp nhất của dịch vụ thương mại (thuvienphapluat, luatvietnam...).",
+    "muc_dich": "Học liệu cá nhân cho lab Data Ingestion Engineering, phi thương mại."
+  },
+  "so_trang": {
+    "quy_tac_tinh": "Trang nội dung hợp lệ = trang có >= 800 ký tự text đã chuẩn hóa. Loại: trang trống/chỉ còn header (<200 ký tự) và trang mục lục.",
+    "tong_so_trang_vat_ly": 168,
+    "tong_so_trang_noi_dung_hop_le": 166
+  },
+  "extraction": {
+    "tool": "pymupdf (fitz)",
+    "pymupdf_version": "2.1",
+    "python_version": "3.12.10",
+    "ngay_chay": "2026-11-14T03:43:04+00:00",
+    "don_vi_xuat": "text theo trang, UTF-8, chuẩn hóa khoảng trắng",
+    "ghi_nhan_loi": "Sót lại 2 vị trí lỗi khoảng trắng dấu tiếng Việt trên toàn corpus (lỗi font PDF: dấu bị tách thành glyph riêng). So sánh: pypdf sinh ~2.000 lỗi tương tự trên cùng file -> chọn pymupdf. Không có trang nào là scan (toàn bộ extract được text)."
+  },
+  "cau_truc": {
+    "tong_so_dieu": 218,
+    "dieu_range": "1-218",
+    "dieu_thieu": [],
+    "tong_so_chuong": 10,
+    "chuong": [
+      {
+        "chuong": "I",
+        "tieu_de": "NHỮNG QUY ĐỊNH CHUNG"
+      },
+      {
+        "chuong": "II",
+        "tieu_de": "THÀNH LẬP DOANH NGHIỆP"
+      },
+      {
+        "chuong": "III",
+        "tieu_de": "CÔNG TY TRÁCH NHIỆM HỮU HẠN"
+      },
+      {
+        "chuong": "IV",
+        "tieu_de": "DOANH NGHIỆP NHÀ NƯỚC"
+      },
+      {
+        "chuong": "V",
+        "tieu_de": "CÔNG TY CỔ PHẦN"
+      },
+      {
+        "chuong": "VI",
+        "tieu_de": "CÔNG TY HỢP DANH"
+      },
+      {
+        "chuong": "VII",
+        "tieu_de": "DOANH NGHIỆP TƯ NHÂN"
+      },
+      {
+        "chuong": "VIII",
+        "tieu_de": "NHÓM CÔNG TY"
+      },
+      {
+        "chuong": "IX",
+        "tieu_de": "TỔ CHỨC LẠI, GIẢI THỂ VÀ PHÁ SẢN DOANH NGHIỆP"
+      },
+      {
+        "chuong": "X",
+        "tieu_de": "ĐIỀU KHOẢN THI HÀNH"
+      }
+    ]
+  },
+  "luu_y_noi_dung": "Luật Doanh nghiệp đã được sửa đổi, bổ sung bởi nhiều văn bản sau 2020 (đáng chú ý Luật số 76/2025/QH15). Corpus này dùng bản gốc Công báo 2020 chưa hợp nhất — câu hỏi benchmark phải trả lời theo văn bản gốc này.",
+  "files": [
+    {
+      "doc_id": "ldn-2020-congbao-p1",
+      "file": "data/raw/ldn_2020_congbao_1.pdf",
+      "sha256": "9a322254a903d24e55b83c11b38d6f7ea26efa9f467578f1b27eedaad4c88498",
+      "size_bytes": 1284888,
+      "cong_bao": "Số 713 + 714 ngày 2020-07-24",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/6/31674/31830-1-2020713-71459-2020-qh14.pdf",
+      "pages_physical": 94,
+      "pages_valid": 92,
+      "chars_total": 184468,
+      "dieu_phat_hien": "1-126 (126 điều)",
+      "loi_khoang_trang": 2
+    },
+    {
+      "doc_id": "ldn-2020-congbao-p2",
+      "file": "data/raw/ldn_2020_congbao_2.pdf",
+      "sha256": "ed316e996f5c8cd1664e65df33c38d377339b451e016f364ee7b1d244adb7766",
+      "size_bytes": 826535,
+      "cong_bao": "Số 715 + 716 ngày 2020-07-24",
+      "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/6/31674/31833-1-2020715-71659-2020-qh14.pdf",
+      "pages_physical": 74,
+      "pages_valid": 74,
+      "chars_total": 148705,
+      "dieu_phat_hien": "127-218 (92 điều)",
+      "loi_khoang_trang": 0
+    }
+  ],
+  "trich_xuat_theo_trang": {
+    "file": "data/extracted/pages.jsonl",
+    "moi_dong": {
+      "document_id": "ID tài liệu",
+      "file": "đường dẫn file gốc",
+      "page": "số trang (1-based)",
+      "section": "slug chương đang hiệu lực trên trang",
+      "section_title": "tên chương",
+      "page_type": "noi_dung | muc_luc | rong",
+      "chars": "số ký tự đã chuẩn hóa",
+      "text": "nội dung trang"
+    }
+  }
+}

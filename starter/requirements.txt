@@ -1,4 +1,8 @@
 # Core setup and PDF parsing. Choose and install an embedding SDK separately.
 psycopg[binary]==3.3.8
 pypdf>=5,<7
+pymupdf>=2.1
 python-dotenv>=1,<2
+
+# Local embedding model (paraphrase-multilingual-MiniLM-L12-v2)
+sentence-transformers>=6,<7
