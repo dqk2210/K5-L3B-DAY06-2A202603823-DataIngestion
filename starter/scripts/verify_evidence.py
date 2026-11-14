@@ -22,9 +22,9 @@ def squash(text: str) -> str:
 
 
 pages = [json.loads(l) for l in PAGES.open(encoding="utf-8")]
-page_squash = {p["page"]: squash(p["text"]) for p in pages}
-page_raw = {p["page"]: p["text"] for p in pages}
-doc_of = {p["page"]: p["document_id"] for p in pages}
+# key theo (document_id, page): hai file Cong Bao co so trang trung nhau
+page_squash = {(p["document_id"], p["page"]): squash(p["text"]) for p in pages}
+page_raw = {(p["document_id"], p["page"]): p["text"] for p in pages}
 
 KEYWORD_MIN = 5  # độ dài từ tối thiểu để làm từ khóa định vị
 
@@ -36,33 +36,16 @@ for q in questions:
     needle = squash(ev)
     if not needle:
         continue
-    hits = [(doc_of[pg], pg) for pg, sq in page_squash.items() if needle in sq]
+    gold_doc = q.get("gold_source_id")
+    same_doc = [(doc, pg) for (doc, pg), sq in page_squash.items() if needle and needle in sq and doc == gold_doc]
+    other_doc = [(doc, pg) for (doc, pg), sq in page_squash.items() if needle and needle in sq and doc != gold_doc]
     gold = q.get("gold_page")
-    status = "OK (dung trang gold)" if any(pg == gold for _, pg in hits) else (
-        "SAI TRANG gold" if hits else "KHONG TIM THAY quote nguyen van")
-    if status == "OK (dung trang gold)":
-        print(f"{q['id']:5s} [{status}]")
+    on_gold = any(pg == gold for _, pg in same_doc)
+    status = "OK" if on_gold else ("SAI TRANG gold (quote dung, trang khac)" if same_doc else (
+        "quote chi co o file khac" if other_doc else "KHONG TIM THAY quote nguyen van"))
+    if status == "OK":
+        print(f"{q['id']:5s} [OK] {gold_doc} trang {gold}")
         continue
-
-    # gợi ý vị trí thật: trang có nhiều từ khóa của quote nhất (lấy từ quote GỐC,
-    # không phải chuỗi đã squash vì squash đã mất khoảng trắng giữa các từ)
-    keywords = sorted({w for w in re.findall(r"[a-zà-ỹ0-9]{%d,}" % KEYWORD_MIN, ev.lower())},
-                      key=len, reverse=True)[:6]
-    best_page, best_score = None, 0
-    for pg, sq in page_squash.items():
-        score = sum(1 for kw in keywords if kw in sq)
-        if score > best_score:
-            best_page, best_score = pg, score
-    print(f"{q['id']:5s} [{status}] gold_page={gold}")
-    print(f"      evidence: {ev[:70]}")
-    if best_page and best_score >= 2:
-        sq = page_squash[best_page]
-        anchor = min(keywords, key=lambda kw: sq.find(kw) if sq.find(kw) >= 0 else 10**9)
-        pos = sq.find(anchor)
-        lo, hi = max(0, pos - 100), min(len(sq), pos + 140)
-        print(f"      doan gan nhat (file {doc_of[best_page]}, trang {best_page}, "
-              f"{best_score}/{len(keywords)} tu khoa):")
-        print(f"      ...{page_raw[best_page][:0]}{sq[lo:hi]}...")
-    else:
-        print("      khong dinh vi duoc — xem lai trang gold trong PDF")
+    print(f"{q['id']:5s} [{status}] gold={gold_doc} trang {gold} | tim thay: {same_doc or other_doc}")
+    print(f"      evidence: {ev[:80]}")
 
