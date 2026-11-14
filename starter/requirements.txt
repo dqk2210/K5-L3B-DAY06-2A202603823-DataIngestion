@@ -4,5 +4,10 @@ pypdf>=5,<7
 pymupdf>=2.1
 python-dotenv>=1,<2
 
-# Local embedding model (paraphrase-multilingual-MiniLM-L12-v2)
+# Local embedding model
+# - gemma2 (default): google/embeddinggemma-2 — multimodal processor needs
+#   Pillow + torchvision even for text-only use (processors are loaded eagerly)
+# - minilm: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 sentence-transformers>=6,<7
+pillow>=13
+torchvision>=0.29

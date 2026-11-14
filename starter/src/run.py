@@ -9,13 +9,11 @@ comparison changes exactly one factor:
   A_fixed       fixed-size windows, never applies a query filter
   B_para        paragraph groups, never applies a query filter
   C_para_flt    same chunks as B, applies the question's metadata filter
-  D_article     one chunk per Dieu (spans pages), applies the filter
 
-B vs A isolates the chunking factor; C vs B isolates the filter factor;
-D vs B isolates structural (article) chunking. Questions come from
-benchmark/questions.jsonl (schema in BENCHMARK.md). Re-ingesting the same
-corpus never duplicates rows (store.upsert removes stale chunk ids), so the
-pipeline is safe to re-run.
+B vs A isolates the chunking factor; C vs B isolates the filter factor.
+Questions come from benchmark/questions.jsonl (schema in BENCHMARK.md).
+Re-ingesting the same corpus never duplicates rows (store.upsert removes
+stale chunk ids), so the pipeline is safe to re-run.
 """
 import argparse
 import json
@@ -27,7 +25,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .chunking import by_article, by_paragraph, fixed_size
+from .chunking import by_paragraph, fixed_size
 from .embeddings import MyEmbedder
 from .evaluation import TOP_K, evaluate_query, summarize
 from .ingestion import load_pages_jsonl
@@ -60,11 +58,6 @@ def build_chunks(strategy: str, pages: list[DocumentPage]) -> list[Chunk]:
         chunks = [c for p in pages for c in by_paragraph(p, PARA_MAX)]
     elif strategy == "C_para_flt":
         chunks = [c for p in pages for c in by_paragraph(p, PARA_MAX)]
-    elif strategy == "D_article":
-        chunks = []
-        for doc_id in sorted({p.document_id for p in pages}):
-            doc_pages = [p for p in pages if p.document_id == doc_id]
-            chunks.extend(by_article(doc_pages))
     else:
         raise ValueError(f"unknown strategy: {strategy}")
     for chunk in chunks:
@@ -149,8 +142,8 @@ def main() -> None:
     print(f"[embed] {embedder.model_name} ({embedder.dimensions} dims, local, cost 0 USD)")
 
     # 2-3. chunk + embed + store per strategy --------------------------------
-    strategies = ["A_fixed", "B_para", "C_para_flt", "D_article"]
-    uses_filter = {"A_fixed": False, "B_para": False, "C_para_flt": True, "D_article": True}
+    strategies = ["A_fixed", "B_para", "C_para_flt"]
+    uses_filter = {"A_fixed": False, "B_para": False, "C_para_flt": True}
     strategy_stats: dict[str, dict] = {}
     for strategy in strategies:
         t = time.perf_counter()
@@ -210,7 +203,6 @@ def main() -> None:
                 "A_fixed": f"size={FIXED_SIZE},overlap={FIXED_OVERLAP}",
                 "B_para": f"max_size={PARA_MAX}",
                 "C_para_flt": f"max_size={PARA_MAX} + metadata filter",
-                "D_article": "one chunk per Dieu + metadata filter",
             },
             "stats": strategy_stats,
             "trace_files": trace_files,
