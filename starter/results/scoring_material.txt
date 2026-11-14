@@ -1,0 +1,1235 @@
+# CHẤT LIỆU CHẤM TIÊU CHÍ 2 — COHERENCE (10 vị trí nguồn × 3 chiến lược)
+# Rubric: 0 = cắt giữa ý/thiếu chủ thể không hiểu | 1 = hiểu một phần, thiếu ngữ cảnh | 2 = tự hiểu, trọn ý
+
+==========================================================================================
+VỊ TRÍ 1: q01 — gold ldn-2020-congbao-p1 p20
+Câu hỏi gốc: Đăng ký doanh nghiệp được thực hiện theo những phương thức nào?
+Evidence gold: Đăng ký doanh nghiệp trực tiếp tại Cơ quan đăng ký kinh doanh
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p020#f00 | page=20 | len=1000 | evidence=CÓ
+TEXT:
+4. Phần vốn góp, giá trị vốn góp, tỷ lệ sở hữu phần vốn góp, loại tài sản, số 
+lượng tài sản, giá trị của từng loại tài sản góp vốn, thời hạn góp vốn của từng thành 
+viên đối với công ty trách nhiệm hữu hạn, công ty hợp danh; số lượng cổ phần, loại 
+cổ phần, tỷ lệ sở hữu cổ phần, loại tài sản, số lượng tài sản, giá trị của từng loại tài 
+sản góp vốn, thời hạn góp vốn của từng cổ đông sáng lập và cổ đông là nhà đầu tư 
+nước ngoài đối với công ty cổ phần. 
+Điều 26. Trình tự, thủ tục đăng ký doanh nghiệp 
+1. Người thành lập doanh nghiệp hoặc người được ủy quyền thực hiện đăng ký 
+doanh nghiệp với Cơ quan đăng ký kinh doanh theo phương thức sau đây: 
+a) Đăng ký doanh nghiệp trực tiếp tại Cơ quan đăng ký kinh doanh; 
+b) Đăng ký doanh nghiệp qua dịch vụ bưu chính; 
+c) Đăng ký doanh nghiệp qua mạng thông tin điện tử. 
+2. Đăng ký doanh nghiệp qua mạng thông tin điện tử là việc người thành lập 
+doanh nghiệp nộp hồ sơ đăng ký doanh nghiệp qua mạng thông tin điện tử tại 
+Cổng thông tin quốc gia v
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p020#g00 | page=20 | len=1200 | evidence=CÓ
+TEXT:
+4. Phần vốn góp, giá trị vốn góp, tỷ lệ sở hữu phần vốn góp, loại tài sản, số 
+lượng tài sản, giá trị của từng loại tài sản góp vốn, thời hạn góp vốn của từng thành 
+viên đối với công ty trách nhiệm hữu hạn, công ty hợp danh; số lượng cổ phần, loại 
+cổ phần, tỷ lệ sở hữu cổ phần, loại tài sản, số lượng tài sản, giá trị của từng loại tài 
+sản góp vốn, thời hạn góp vốn của từng cổ đông sáng lập và cổ đông là nhà đầu tư 
+nước ngoài đối với công ty cổ phần. 
+Điều 26. Trình tự, thủ tục đăng ký doanh nghiệp 
+1. Người thành lập doanh nghiệp hoặc người được ủy quyền thực hiện đăng ký 
+doanh nghiệp với Cơ quan đăng ký kinh doanh theo phương thức sau đây: 
+a) Đăng ký doanh nghiệp trực tiếp tại Cơ quan đăng ký kinh doanh; 
+b) Đăng ký doanh nghiệp qua dịch vụ bưu chính; 
+c) Đăng ký doanh nghiệp qua mạng thông tin điện tử. 
+2. Đăng ký doanh nghiệp qua mạng thông tin điện tử là việc người thành lập 
+doanh nghiệp nộp hồ sơ đăng ký doanh nghiệp qua mạng thông tin điện tử tại 
+Cổng thông tin quốc gia về đăng ký doanh nghiệp. Hồ sơ đăng ký doanh nghiệp 
+qua mạng thông tin điện tử bao gồm các dữ liệu theo quy định của Luật này và 
+được thể hiện dưới dạng văn bản điện tử. Hồ sơ đăng ký doanh nghiệp qu
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p020#g00 | page=20 | len=1200 | evidence=CÓ
+TEXT:
+4. Phần vốn góp, giá trị vốn góp, tỷ lệ sở hữu phần vốn góp, loại tài sản, số 
+lượng tài sản, giá trị của từng loại tài sản góp vốn, thời hạn góp vốn của từng thành 
+viên đối với công ty trách nhiệm hữu hạn, công ty hợp danh; số lượng cổ phần, loại 
+cổ phần, tỷ lệ sở hữu cổ phần, loại tài sản, số lượng tài sản, giá trị của từng loại tài 
+sản góp vốn, thời hạn góp vốn của từng cổ đông sáng lập và cổ đông là nhà đầu tư 
+nước ngoài đối với công ty cổ phần. 
+Điều 26. Trình tự, thủ tục đăng ký doanh nghiệp 
+1. Người thành lập doanh nghiệp hoặc người được ủy quyền thực hiện đăng ký 
+doanh nghiệp với Cơ quan đăng ký kinh doanh theo phương thức sau đây: 
+a) Đăng ký doanh nghiệp trực tiếp tại Cơ quan đăng ký kinh doanh; 
+b) Đăng ký doanh nghiệp qua dịch vụ bưu chính; 
+c) Đăng ký doanh nghiệp qua mạng thông tin điện tử. 
+2. Đăng ký doanh nghiệp qua mạng thông tin điện tử là việc người thành lập 
+doanh nghiệp nộp hồ sơ đăng ký doanh nghiệp qua mạng thông tin điện tử tại 
+Cổng thông tin quốc gia về đăng ký doanh nghiệp. Hồ sơ đăng ký doanh nghiệp 
+qua mạng thông tin điện tử bao gồm các dữ liệu theo quy định của Luật này và 
+được thể hiện dưới dạng văn bản điện tử. Hồ sơ đăng ký doanh nghiệp qu
+
+==========================================================================================
+VỊ TRÍ 2: q02 — gold ldn-2020-congbao-p1 p21
+Câu hỏi gốc: Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi thỏa mãn những điều kiện gì?
+Evidence gold: Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p021#f00 | page=21 | len=1000 | evidence=CÓ
+TEXT:
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 38, 39 
+và 41 của Luật này; 
+c) Có hồ sơ đăng ký doanh nghiệp hợp lệ; 
+d) Nộp đủ lệ phí đăng ký doanh nghiệp theo quy định của pháp luật về phí và 
+lệ phí. 
+2. Trường hợp Giấy chứng nhận đăng ký doanh nghiệp bị mất, bị hư hỏng 
+hoặc bị hủy hoại dưới hình thức khác, doanh nghiệp được cấp lại Giấy chứng nhận 
+đăng ký doanh nghiệp và phải nộp lệ phí theo quy định của pháp luật. 
+Điều 28. Nội dung Giấy
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p021#g00 | page=21 | len=1199 | evidence=CÓ
+TEXT:
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 38, 39 
+và 41 của Luật này; 
+c) Có hồ sơ đăng ký doanh nghiệp hợp lệ; 
+d) Nộp đủ lệ phí đăng ký doanh nghiệp theo quy định của pháp luật về phí và 
+lệ phí. 
+2. Trường hợp Giấy chứng nhận đăng ký doanh nghiệp bị mất, bị hư hỏng 
+hoặc bị hủy hoại dưới hình thức khác, doanh nghiệp được cấp lại Giấy chứng nhận 
+đăng ký doanh nghiệp và phải nộp lệ phí theo quy định của pháp luật. 
+Điều 28. Nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+Giấy chứng nhận đăng ký doanh nghiệp bao gồm các nội dung chủ yếu sau đây: 
+1. Tên doanh nghiệp và mã số doanh nghiệp; 
+2. Địa chỉ trụ sở chính của doanh nghiệp; 
+3.
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p021#g00 | page=21 | len=1199 | evidence=CÓ
+TEXT:
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 38, 39 
+và 41 của Luật này; 
+c) Có hồ sơ đăng ký doanh nghiệp hợp lệ; 
+d) Nộp đủ lệ phí đăng ký doanh nghiệp theo quy định của pháp luật về phí và 
+lệ phí. 
+2. Trường hợp Giấy chứng nhận đăng ký doanh nghiệp bị mất, bị hư hỏng 
+hoặc bị hủy hoại dưới hình thức khác, doanh nghiệp được cấp lại Giấy chứng nhận 
+đăng ký doanh nghiệp và phải nộp lệ phí theo quy định của pháp luật. 
+Điều 28. Nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+Giấy chứng nhận đăng ký doanh nghiệp bao gồm các nội dung chủ yếu sau đây: 
+1. Tên doanh nghiệp và mã số doanh nghiệp; 
+2. Địa chỉ trụ sở chính của doanh nghiệp; 
+3.
+
+==========================================================================================
+VỊ TRÍ 3: q03 — gold ldn-2020-congbao-p1 p22
+Câu hỏi gốc: Một mã số doanh nghiệp đã cấp có thể được cấp lại cho doanh nghiệp khác không?
+Evidence gold: Mỗi doanh nghiệp có một mã số duy nhất và không được sử dụng lại để cấp cho doanh nghiệp khác
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p022#f00 | page=22 | len=1000 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ s
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p022#g00 | page=22 | len=1199 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh 
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh 
+nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới thì 
+phải thông
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p022#g00 | page=22 | len=1199 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh 
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh 
+nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới thì 
+phải thông
+
+==========================================================================================
+VỊ TRÍ 4: q04 — gold ldn-2020-congbao-p1 p22
+Câu hỏi gốc: Doanh nghiệp phải đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp trong thời hạn bao lâu kể từ ngày có thay đổi?
+Evidence gold: trong thời hạn 10 ngày kể từ ngày có thay đổi
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p022#f00 | page=22 | len=1000 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ s
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p022#g00 | page=22 | len=1199 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh 
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh 
+nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới thì 
+phải thông
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p022#g00 | page=22 | len=1199 | evidence=CÓ
+TEXT:
+Điều 29. Mã số doanh nghiệp 
+1. Mã số doanh nghiệp là dãy số được tạo bởi Hệ thống thông tin quốc gia về 
+đăng ký doanh nghiệp, được cấp cho doanh nghiệp khi thành lập và được ghi trên 
+Giấy chứng nhận đăng ký doanh nghiệp. Mỗi doanh nghiệp có một mã số duy nhất 
+và không được sử dụng lại để cấp cho doanh nghiệp khác. 
+2. Mã số doanh nghiệp được dùng để thực hiện nghĩa vụ về thuế, thủ tục hành 
+chính và quyền, nghĩa vụ khác. 
+Điều 30. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp phải đăng ký với Cơ quan đăng ký kinh doanh khi thay đổi nội 
+dung Giấy chứng nhận đăng ký doanh nghiệp quy định tại Điều 28 của Luật này. 
+2. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký doanh nghiệp trong thời hạn 10 ngày kể từ ngày có thay đổi. 
+3. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh 
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh 
+nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới thì 
+phải thông
+
+==========================================================================================
+VỊ TRÍ 5: q05 — gold ldn-2020-congbao-p1 p27
+Câu hỏi gốc: Tên tiếng Việt của doanh nghiệp bao gồm những thành tố nào?
+Evidence gold: Tên tiếng Việt của doanh nghiệp bao gồm hai thành tố theo thứ tự sau đây
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p027#f00 | page=27 | len=999 | evidence=CÓ
+TEXT:
+thẩm định giá định giá. Trường hợp tổ chức thẩm định giá định giá thì giá trị tài 
+sản góp vốn phải được người góp vốn và chủ sở hữu, Hội đồng thành viên hoặc 
+Hội đồng quản trị chấp thuận. 
+Trường hợp tài sản góp vốn được định giá cao hơn giá trị thực tế của tài sản đó 
+tại thời điểm góp vốn thì người góp vốn, chủ sở hữu, thành viên Hội đồng thành 
+viên đối với công ty trách nhiệm hữu hạn và công ty hợp danh, thành viên Hội 
+đồng quản trị đối với công ty cổ phần cùng liên đới góp thêm bằng số chênh lệch 
+giữa giá trị được định giá và giá trị thực tế của tài sản góp vốn tại thời điểm kết 
+thúc định giá; đồng thời liên đới chịu trách nhiệm đối với thiệt hại do việc cố ý 
+định giá tài sản góp vốn cao hơn giá trị thực tế. 
+Điều 37. Tên doanh nghiệp 
+1. Tên tiếng Việt của doanh nghiệp bao gồm hai thành tố theo thứ tự sau đây: 
+a) Loại hình doanh nghiệp; 
+b) Tên riêng. 
+2. Loại hình doanh nghiệp được viết là “công ty trách nhiệm hữu hạn” hoặc 
+“công ty TNHH” đối với công ty trách nhiệm hữu
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p027#g00 | page=27 | len=1200 | evidence=CÓ
+TEXT:
+thẩm định giá định giá. Trường hợp tổ chức thẩm định giá định giá thì giá trị tài 
+sản góp vốn phải được người góp vốn và chủ sở hữu, Hội đồng thành viên hoặc 
+Hội đồng quản trị chấp thuận. 
+Trường hợp tài sản góp vốn được định giá cao hơn giá trị thực tế của tài sản đó 
+tại thời điểm góp vốn thì người góp vốn, chủ sở hữu, thành viên Hội đồng thành 
+viên đối với công ty trách nhiệm hữu hạn và công ty hợp danh, thành viên Hội 
+đồng quản trị đối với công ty cổ phần cùng liên đới góp thêm bằng số chênh lệch 
+giữa giá trị được định giá và giá trị thực tế của tài sản góp vốn tại thời điểm kết 
+thúc định giá; đồng thời liên đới chịu trách nhiệm đối với thiệt hại do việc cố ý 
+định giá tài sản góp vốn cao hơn giá trị thực tế. 
+Điều 37. Tên doanh nghiệp 
+1. Tên tiếng Việt của doanh nghiệp bao gồm hai thành tố theo thứ tự sau đây: 
+a) Loại hình doanh nghiệp; 
+b) Tên riêng. 
+2. Loại hình doanh nghiệp được viết là “công ty trách nhiệm hữu hạn” hoặc 
+“công ty TNHH” đối với công ty trách nhiệm hữu hạn; được viết là “công ty cổ 
+phần” hoặc “công ty CP” đối với công ty cổ phần; được viết là “công ty hợp danh” 
+hoặc “công ty HD” đối với công ty hợp danh; được viết là “doanh nghiệp tư nhân”, 
+“DNTN
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p027#g00 | page=27 | len=1200 | evidence=CÓ
+TEXT:
+thẩm định giá định giá. Trường hợp tổ chức thẩm định giá định giá thì giá trị tài 
+sản góp vốn phải được người góp vốn và chủ sở hữu, Hội đồng thành viên hoặc 
+Hội đồng quản trị chấp thuận. 
+Trường hợp tài sản góp vốn được định giá cao hơn giá trị thực tế của tài sản đó 
+tại thời điểm góp vốn thì người góp vốn, chủ sở hữu, thành viên Hội đồng thành 
+viên đối với công ty trách nhiệm hữu hạn và công ty hợp danh, thành viên Hội 
+đồng quản trị đối với công ty cổ phần cùng liên đới góp thêm bằng số chênh lệch 
+giữa giá trị được định giá và giá trị thực tế của tài sản góp vốn tại thời điểm kết 
+thúc định giá; đồng thời liên đới chịu trách nhiệm đối với thiệt hại do việc cố ý 
+định giá tài sản góp vốn cao hơn giá trị thực tế. 
+Điều 37. Tên doanh nghiệp 
+1. Tên tiếng Việt của doanh nghiệp bao gồm hai thành tố theo thứ tự sau đây: 
+a) Loại hình doanh nghiệp; 
+b) Tên riêng. 
+2. Loại hình doanh nghiệp được viết là “công ty trách nhiệm hữu hạn” hoặc 
+“công ty TNHH” đối với công ty trách nhiệm hữu hạn; được viết là “công ty cổ 
+phần” hoặc “công ty CP” đối với công ty cổ phần; được viết là “công ty hợp danh” 
+hoặc “công ty HD” đối với công ty hợp danh; được viết là “doanh nghiệp tư nhân”, 
+“DNTN
+
+==========================================================================================
+VỊ TRÍ 6: q06 — gold ldn-2020-congbao-p1 p30
+Câu hỏi gốc: Trụ sở chính của doanh nghiệp được đặt ở đâu?
+Evidence gold: Trụ sở chính của doanh nghiệp đặt trên lãnh thổ Việt Nam, là địa chỉ liên lạc của doanh nghiệp
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p030#f00 | page=30 | len=1000 | evidence=CÓ
+TEXT:
+Điều 42. Trụ sở chính của doanh nghiệp 
+Trụ sở chính của doanh nghiệp đặt trên lãnh thổ Việt Nam, là địa chỉ liên lạc 
+của doanh nghiệp và được xác định theo địa giới đơn vị hành chính; có số điện 
+thoại, số fax và thư điện tử (nếu có). 
+Điều 43. Dấu của doanh nghiệp 
+1. Dấu bao gồm dấu được làm tại cơ sở khắc dấu hoặc dấu dưới hình thức chữ 
+ký số theo quy định của pháp luật về giao dịch điện tử. 
+2. Doanh nghiệp quyết định loại dấu, số lượng, hình thức và nội dung dấu của 
+doanh nghiệp, chi nhánh, văn phòng đại diện và đơn vị khác của doanh nghiệp. 
+3. Việc quản lý và lưu giữ dấu thực hiện theo quy định của Điều lệ công ty 
+hoặc quy chế do doanh nghiệp, chi nhánh, văn phòng đại diện hoặc đơn vị khác 
+của doanh nghiệp có dấu ban hành. Doanh nghiệp sử dụng dấu trong các giao dịch 
+theo quy định của pháp luật. 
+Điều 44. Chi nhánh, văn phòng đại diện và địa điểm kinh doanh của 
+doanh nghiệp 
+1. Chi nhánh là đơn vị phụ thuộc của doanh nghiệp, có nhiệm vụ thực hiện 
+toàn bộ hoặc một phần c
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p030#g00 | page=30 | len=1200 | evidence=CÓ
+TEXT:
+Điều 42. Trụ sở chính của doanh nghiệp 
+Trụ sở chính của doanh nghiệp đặt trên lãnh thổ Việt Nam, là địa chỉ liên lạc 
+của doanh nghiệp và được xác định theo địa giới đơn vị hành chính; có số điện 
+thoại, số fax và thư điện tử (nếu có). 
+Điều 43. Dấu của doanh nghiệp 
+1. Dấu bao gồm dấu được làm tại cơ sở khắc dấu hoặc dấu dưới hình thức chữ 
+ký số theo quy định của pháp luật về giao dịch điện tử. 
+2. Doanh nghiệp quyết định loại dấu, số lượng, hình thức và nội dung dấu của 
+doanh nghiệp, chi nhánh, văn phòng đại diện và đơn vị khác của doanh nghiệp. 
+3. Việc quản lý và lưu giữ dấu thực hiện theo quy định của Điều lệ công ty 
+hoặc quy chế do doanh nghiệp, chi nhánh, văn phòng đại diện hoặc đơn vị khác 
+của doanh nghiệp có dấu ban hành. Doanh nghiệp sử dụng dấu trong các giao dịch 
+theo quy định của pháp luật. 
+Điều 44. Chi nhánh, văn phòng đại diện và địa điểm kinh doanh của 
+doanh nghiệp 
+1. Chi nhánh là đơn vị phụ thuộc của doanh nghiệp, có nhiệm vụ thực hiện 
+toàn bộ hoặc một phần chức năng của doanh nghiệp, bao gồm cả chức năng đại 
+diện theo ủy quyền. Ngành, nghề kinh doanh của chi nhánh phải đúng với ngành, 
+nghề kinh doanh của doanh nghiệp. 
+2. Văn phòng đại diện là đơn vị p
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p030#g00 | page=30 | len=1200 | evidence=CÓ
+TEXT:
+Điều 42. Trụ sở chính của doanh nghiệp 
+Trụ sở chính của doanh nghiệp đặt trên lãnh thổ Việt Nam, là địa chỉ liên lạc 
+của doanh nghiệp và được xác định theo địa giới đơn vị hành chính; có số điện 
+thoại, số fax và thư điện tử (nếu có). 
+Điều 43. Dấu của doanh nghiệp 
+1. Dấu bao gồm dấu được làm tại cơ sở khắc dấu hoặc dấu dưới hình thức chữ 
+ký số theo quy định của pháp luật về giao dịch điện tử. 
+2. Doanh nghiệp quyết định loại dấu, số lượng, hình thức và nội dung dấu của 
+doanh nghiệp, chi nhánh, văn phòng đại diện và đơn vị khác của doanh nghiệp. 
+3. Việc quản lý và lưu giữ dấu thực hiện theo quy định của Điều lệ công ty 
+hoặc quy chế do doanh nghiệp, chi nhánh, văn phòng đại diện hoặc đơn vị khác 
+của doanh nghiệp có dấu ban hành. Doanh nghiệp sử dụng dấu trong các giao dịch 
+theo quy định của pháp luật. 
+Điều 44. Chi nhánh, văn phòng đại diện và địa điểm kinh doanh của 
+doanh nghiệp 
+1. Chi nhánh là đơn vị phụ thuộc của doanh nghiệp, có nhiệm vụ thực hiện 
+toàn bộ hoặc một phần chức năng của doanh nghiệp, bao gồm cả chức năng đại 
+diện theo ủy quyền. Ngành, nghề kinh doanh của chi nhánh phải đúng với ngành, 
+nghề kinh doanh của doanh nghiệp. 
+2. Văn phòng đại diện là đơn vị p
+
+==========================================================================================
+VỊ TRÍ 7: q07 — gold ldn-2020-congbao-p1 p31
+Câu hỏi gốc: Công ty TNHH hai thành viên trở lên có tối đa bao nhiêu thành viên?
+Evidence gold: doanh nghiệp có từ 02 đến 50 thành viên là tổ chức, cá nhân
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p031#f01 | page=31 | len=923 | evidence=CÓ
+TEXT:
+. Trường hợp từ chối cấp Giấy chứng nhận đăng ký hoạt 
+động chi nhánh, văn phòng đại diện thì phải thông báo bằng văn bản cho doanh 
+nghiệp và nêu rõ lý do. 
+4. Doanh nghiệp chịu trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận 
+đăng ký hoạt động chi nhánh, văn phòng đại diện trong thời hạn 10 ngày kể từ 
+ngày có thay đổi. 
+5. Trong thời hạn 10 ngày kể từ ngày quyết định địa điểm kinh doanh, doanh 
+nghiệp thông báo địa điểm kinh doanh đến Cơ quan đăng ký kinh doanh. 
+6. Chính phủ quy định chi tiết Điều này. 
+ 
+Chương III 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN 
+ 
+Mục 1 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN HAI THÀNH VIÊN TRỞ LÊN 
+ 
+Điều 46. Công ty trách nhiệm hữu hạn hai thành viên trở lên 
+1. Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 
+đến 50 thành viên là tổ chức, cá nhân. Thành viên chịu trách nhiệm về các khoản 
+nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p031#g01 | page=31 | len=564 | evidence=CÓ
+TEXT:
+0 ngày kể từ ngày quyết định địa điểm kinh doanh, doanh 
+nghiệp thông báo địa điểm kinh doanh đến Cơ quan đăng ký kinh doanh. 
+6. Chính phủ quy định chi tiết Điều này.
+Chương III 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN
+Mục 1 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN HAI THÀNH VIÊN TRỞ LÊN
+Điều 46. Công ty trách nhiệm hữu hạn hai thành viên trở lên 
+1. Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 
+đến 50 thành viên là tổ chức, cá nhân. Thành viên chịu trách nhiệm về các khoản 
+nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p031#g01 | page=31 | len=564 | evidence=CÓ
+TEXT:
+0 ngày kể từ ngày quyết định địa điểm kinh doanh, doanh 
+nghiệp thông báo địa điểm kinh doanh đến Cơ quan đăng ký kinh doanh. 
+6. Chính phủ quy định chi tiết Điều này.
+Chương III 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN
+Mục 1 
+CÔNG TY TRÁCH NHIỆM HỮU HẠN HAI THÀNH VIÊN TRỞ LÊN
+Điều 46. Công ty trách nhiệm hữu hạn hai thành viên trở lên 
+1. Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 
+đến 50 thành viên là tổ chức, cá nhân. Thành viên chịu trách nhiệm về các khoản 
+nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào
+
+==========================================================================================
+VỊ TRÍ 8: q08 — gold ldn-2020-congbao-p1 p36
+Câu hỏi gốc: Trường hợp nào thành viên công ty TNHH có quyền yêu cầu công ty mua lại phần vốn góp của mình?
+Evidence gold: nếu thành viên đó đã bỏ phiếu không tán thành đối với nghị quyết, quyết định của Hội đồng thành viên
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p036#f00 | page=36 | len=1000 | evidence=CÓ
+TEXT:
+c) Thanh toán khoản nợ chưa đến hạn trước nguy cơ tài chính có thể xảy ra đối 
+với công ty. 
+6. Nghĩa vụ khác theo quy định của Luật này. 
+Điều 51. Mua lại phần vốn góp 
+1. Thành viên có quyền yêu cầu công ty mua lại phần vốn góp của mình nếu 
+thành viên đó đã bỏ phiếu không tán thành đối với nghị quyết, quyết định của Hội 
+đồng thành viên về vấn đề sau đây: 
+a) Sửa đổi, bổ sung các nội dung trong Điều lệ công ty liên quan đến quyền và 
+nghĩa vụ của thành viên, Hội đồng thành viên; 
+b) Tổ chức lại công ty; 
+c) Trường hợp khác theo quy định tại Điều lệ công ty. 
+2. Yêu cầu mua lại phần vốn góp phải bằng văn bản và được gửi đến công ty 
+trong thời hạn 15 ngày kể từ ngày thông qua nghị quyết, quyết định quy định tại 
+khoản 1 Điều này. 
+3. Trong thời hạn 15 ngày kể từ ngày nhận được yêu cầu của thành viên quy 
+định tại khoản 1 Điều này thì công ty phải mua lại phần vốn góp của thành viên đó 
+theo giá thị trường hoặc giá được xác định theo nguyên tắc quy định tại Điều lệ 
+công ty, trừ trườn
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p036#g00 | page=36 | len=1200 | evidence=CÓ
+TEXT:
+c) Thanh toán khoản nợ chưa đến hạn trước nguy cơ tài chính có thể xảy ra đối 
+với công ty. 
+6. Nghĩa vụ khác theo quy định của Luật này. 
+Điều 51. Mua lại phần vốn góp 
+1. Thành viên có quyền yêu cầu công ty mua lại phần vốn góp của mình nếu 
+thành viên đó đã bỏ phiếu không tán thành đối với nghị quyết, quyết định của Hội 
+đồng thành viên về vấn đề sau đây: 
+a) Sửa đổi, bổ sung các nội dung trong Điều lệ công ty liên quan đến quyền và 
+nghĩa vụ của thành viên, Hội đồng thành viên; 
+b) Tổ chức lại công ty; 
+c) Trường hợp khác theo quy định tại Điều lệ công ty. 
+2. Yêu cầu mua lại phần vốn góp phải bằng văn bản và được gửi đến công ty 
+trong thời hạn 15 ngày kể từ ngày thông qua nghị quyết, quyết định quy định tại 
+khoản 1 Điều này. 
+3. Trong thời hạn 15 ngày kể từ ngày nhận được yêu cầu của thành viên quy 
+định tại khoản 1 Điều này thì công ty phải mua lại phần vốn góp của thành viên đó 
+theo giá thị trường hoặc giá được xác định theo nguyên tắc quy định tại Điều lệ 
+công ty, trừ trường hợp hai bên thỏa thuận được về giá. Việc thanh toán chỉ được 
+thực hiện nếu sau khi thanh toán đủ phần vốn góp được mua lại, công ty vẫn thanh 
+toán đủ các khoản nợ và nghĩa vụ tài sản khác. 
+4. Trư
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p036#g00 | page=36 | len=1200 | evidence=CÓ
+TEXT:
+c) Thanh toán khoản nợ chưa đến hạn trước nguy cơ tài chính có thể xảy ra đối 
+với công ty. 
+6. Nghĩa vụ khác theo quy định của Luật này. 
+Điều 51. Mua lại phần vốn góp 
+1. Thành viên có quyền yêu cầu công ty mua lại phần vốn góp của mình nếu 
+thành viên đó đã bỏ phiếu không tán thành đối với nghị quyết, quyết định của Hội 
+đồng thành viên về vấn đề sau đây: 
+a) Sửa đổi, bổ sung các nội dung trong Điều lệ công ty liên quan đến quyền và 
+nghĩa vụ của thành viên, Hội đồng thành viên; 
+b) Tổ chức lại công ty; 
+c) Trường hợp khác theo quy định tại Điều lệ công ty. 
+2. Yêu cầu mua lại phần vốn góp phải bằng văn bản và được gửi đến công ty 
+trong thời hạn 15 ngày kể từ ngày thông qua nghị quyết, quyết định quy định tại 
+khoản 1 Điều này. 
+3. Trong thời hạn 15 ngày kể từ ngày nhận được yêu cầu của thành viên quy 
+định tại khoản 1 Điều này thì công ty phải mua lại phần vốn góp của thành viên đó 
+theo giá thị trường hoặc giá được xác định theo nguyên tắc quy định tại Điều lệ 
+công ty, trừ trường hợp hai bên thỏa thuận được về giá. Việc thanh toán chỉ được 
+thực hiện nếu sau khi thanh toán đủ phần vốn góp được mua lại, công ty vẫn thanh 
+toán đủ các khoản nợ và nghĩa vụ tài sản khác. 
+4. Trư
+
+==========================================================================================
+VỊ TRÍ 9: q09 — gold ldn-2020-congbao-p1 p48
+Câu hỏi gốc: Đối với doanh nghiệp nhà nước, Giám đốc hoặc Tổng giám đốc có bị giới hạn quan hệ gia đình với người quản lý công ty không?
+Evidence gold: không được là người có quan hệ gia đình của người quản lý công ty
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p048#f00 | page=48 | len=1000 | evidence=CÓ
+TEXT:
+Điều 64. Tiêu chuẩn và điều kiện làm Giám đốc, Tổng giám đốc 
+1. Không thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật này. 
+2. Có trình độ chuyên môn, kinh nghiệm trong quản trị kinh doanh của công ty 
+và điều kiện khác do Điều lệ công ty quy định. 
+3. Đối với doanh nghiệp nhà nước theo quy định tại điểm b khoản 1 Điều 88 
+của Luật này và công ty con của doanh nghiệp nhà nước theo quy định tại khoản 1 
+Điều 88 của Luật này, Giám đốc hoặc Tổng giám đốc phải đáp ứng tiêu chuẩn, 
+điều kiện quy định tại khoản 1, khoản 2 Điều này và không được là người có quan 
+hệ gia đình của người quản lý công ty, Kiểm soát viên của công ty và của công ty 
+mẹ; người đại diện phần vốn của doanh nghiệp, người đại diện phần vốn nhà nước 
+tại công ty và công ty mẹ. 
+Điều 65. Ban kiểm soát, Kiểm soát viên 
+1. Ban kiểm soát có từ 01 đến 05 Kiểm soát viên. Nhiệm kỳ Kiểm soát 
+viên không quá 05 năm và có thể được bổ nhiệm lại với số nhiệm kỳ không 
+hạn chế. Trường hợp Ban kiểm soát chỉ có 01 Kiểm soát viên
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p048#g00 | page=48 | len=1200 | evidence=CÓ
+TEXT:
+Điều 64. Tiêu chuẩn và điều kiện làm Giám đốc, Tổng giám đốc 
+1. Không thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật này. 
+2. Có trình độ chuyên môn, kinh nghiệm trong quản trị kinh doanh của công ty 
+và điều kiện khác do Điều lệ công ty quy định. 
+3. Đối với doanh nghiệp nhà nước theo quy định tại điểm b khoản 1 Điều 88 
+của Luật này và công ty con của doanh nghiệp nhà nước theo quy định tại khoản 1 
+Điều 88 của Luật này, Giám đốc hoặc Tổng giám đốc phải đáp ứng tiêu chuẩn, 
+điều kiện quy định tại khoản 1, khoản 2 Điều này và không được là người có quan 
+hệ gia đình của người quản lý công ty, Kiểm soát viên của công ty và của công ty 
+mẹ; người đại diện phần vốn của doanh nghiệp, người đại diện phần vốn nhà nước 
+tại công ty và công ty mẹ. 
+Điều 65. Ban kiểm soát, Kiểm soát viên 
+1. Ban kiểm soát có từ 01 đến 05 Kiểm soát viên. Nhiệm kỳ Kiểm soát 
+viên không quá 05 năm và có thể được bổ nhiệm lại với số nhiệm kỳ không 
+hạn chế. Trường hợp Ban kiểm soát chỉ có 01 Kiểm soát viên thì Kiểm soát 
+viên đó đồng thời là Trưởng Ban kiểm soát và phải đáp ứng tiêu chuẩn của 
+Trưởng Ban kiểm soát. 
+2. Trưởng Ban kiểm soát, Kiểm soát viên phải đáp ứng các tiêu chuẩn và điều 
+kiện tương
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p048#g00 | page=48 | len=1200 | evidence=CÓ
+TEXT:
+Điều 64. Tiêu chuẩn và điều kiện làm Giám đốc, Tổng giám đốc 
+1. Không thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật này. 
+2. Có trình độ chuyên môn, kinh nghiệm trong quản trị kinh doanh của công ty 
+và điều kiện khác do Điều lệ công ty quy định. 
+3. Đối với doanh nghiệp nhà nước theo quy định tại điểm b khoản 1 Điều 88 
+của Luật này và công ty con của doanh nghiệp nhà nước theo quy định tại khoản 1 
+Điều 88 của Luật này, Giám đốc hoặc Tổng giám đốc phải đáp ứng tiêu chuẩn, 
+điều kiện quy định tại khoản 1, khoản 2 Điều này và không được là người có quan 
+hệ gia đình của người quản lý công ty, Kiểm soát viên của công ty và của công ty 
+mẹ; người đại diện phần vốn của doanh nghiệp, người đại diện phần vốn nhà nước 
+tại công ty và công ty mẹ. 
+Điều 65. Ban kiểm soát, Kiểm soát viên 
+1. Ban kiểm soát có từ 01 đến 05 Kiểm soát viên. Nhiệm kỳ Kiểm soát 
+viên không quá 05 năm và có thể được bổ nhiệm lại với số nhiệm kỳ không 
+hạn chế. Trường hợp Ban kiểm soát chỉ có 01 Kiểm soát viên thì Kiểm soát 
+viên đó đồng thời là Trưởng Ban kiểm soát và phải đáp ứng tiêu chuẩn của 
+Trưởng Ban kiểm soát. 
+2. Trưởng Ban kiểm soát, Kiểm soát viên phải đáp ứng các tiêu chuẩn và điều 
+kiện tương
+
+==========================================================================================
+VỊ TRÍ 10: q10 — gold ldn-2020-congbao-p1 p51
+Câu hỏi gốc: Công ty trách nhiệm hữu hạn khi nào được chia lợi nhuận cho các thành viên?
+Evidence gold: sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác
+
+--- A_fixed | chunk=A_fixed#ldn-2020-congbao-p1#p051#f00 | page=51 | len=1000 | evidence=CÓ
+TEXT:
+Điều 69. Điều kiện để chia lợi nhuận 
+Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành 
+nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo 
+đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi 
+chia lợi nhuận. 
+Điều 70. Thu hồi phần vốn góp đã hoàn trả hoặc lợi nhuận đã chia 
+Trường hợp hoàn trả một phần vốn góp do giảm vốn điều lệ trái với quy định 
+tại khoản 3 Điều 68 của Luật này hoặc chia lợi nhuận cho thành viên trái với quy 
+định tại Điều 69 của Luật này thì các thành viên công ty phải hoàn trả cho công ty 
+số tiền, tài sản khác đã nhận; phải cùng liên đới chịu trách nhiệm về các khoản nợ 
+và nghĩa vụ tài sản khác của công ty tương ứng với số tiền, tài sản chưa hoàn trả đủ 
+cho đến khi hoàn trả đủ số tiền, tài sản khác đã nhận. 
+Điều 71. Trách nhiệm của Chủ tịch Hội đồng thành viên, Giám đốc, 
+Tổng giám đốc và người quản lý khác, người đại diện theo pháp luật, Kiểm 
+soát viên 
+1. Chủ tịch Hội đồng thành viê
+
+--- B_para | chunk=B_para#ldn-2020-congbao-p1#p051#g00 | page=51 | len=1200 | evidence=CÓ
+TEXT:
+Điều 69. Điều kiện để chia lợi nhuận 
+Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành 
+nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo 
+đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi 
+chia lợi nhuận. 
+Điều 70. Thu hồi phần vốn góp đã hoàn trả hoặc lợi nhuận đã chia 
+Trường hợp hoàn trả một phần vốn góp do giảm vốn điều lệ trái với quy định 
+tại khoản 3 Điều 68 của Luật này hoặc chia lợi nhuận cho thành viên trái với quy 
+định tại Điều 69 của Luật này thì các thành viên công ty phải hoàn trả cho công ty 
+số tiền, tài sản khác đã nhận; phải cùng liên đới chịu trách nhiệm về các khoản nợ 
+và nghĩa vụ tài sản khác của công ty tương ứng với số tiền, tài sản chưa hoàn trả đủ 
+cho đến khi hoàn trả đủ số tiền, tài sản khác đã nhận. 
+Điều 71. Trách nhiệm của Chủ tịch Hội đồng thành viên, Giám đốc, 
+Tổng giám đốc và người quản lý khác, người đại diện theo pháp luật, Kiểm 
+soát viên 
+1. Chủ tịch Hội đồng thành viên, Giám đốc hoặc Tổng giám đốc và người quản 
+lý khác, người đại diện theo pháp luật, Kiểm soát viên của công ty có trách nhiệm 
+sau đây: 
+a) Thực hiện quyền và nghĩa vụ một cách trung thực, cẩn trọng
+
+--- C_para_flt | chunk=C_para_flt#ldn-2020-congbao-p1#p051#g00 | page=51 | len=1200 | evidence=CÓ
+TEXT:
+Điều 69. Điều kiện để chia lợi nhuận 
+Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành 
+nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo 
+đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi 
+chia lợi nhuận. 
+Điều 70. Thu hồi phần vốn góp đã hoàn trả hoặc lợi nhuận đã chia 
+Trường hợp hoàn trả một phần vốn góp do giảm vốn điều lệ trái với quy định 
+tại khoản 3 Điều 68 của Luật này hoặc chia lợi nhuận cho thành viên trái với quy 
+định tại Điều 69 của Luật này thì các thành viên công ty phải hoàn trả cho công ty 
+số tiền, tài sản khác đã nhận; phải cùng liên đới chịu trách nhiệm về các khoản nợ 
+và nghĩa vụ tài sản khác của công ty tương ứng với số tiền, tài sản chưa hoàn trả đủ 
+cho đến khi hoàn trả đủ số tiền, tài sản khác đã nhận. 
+Điều 71. Trách nhiệm của Chủ tịch Hội đồng thành viên, Giám đốc, 
+Tổng giám đốc và người quản lý khác, người đại diện theo pháp luật, Kiểm 
+soát viên 
+1. Chủ tịch Hội đồng thành viên, Giám đốc hoặc Tổng giám đốc và người quản 
+lý khác, người đại diện theo pháp luật, Kiểm soát viên của công ty có trách nhiệm 
+sau đây: 
+a) Thực hiện quyền và nghĩa vụ một cách trung thực, cẩn trọng
+
+
+##########################################################################################
+
+# CHẤT LIỆU CHẤM TIÊU CHÍ 4 — GROUNDING (5 câu test × 3 chiến lược, top-3)
+# Rubric: 0 = không có bằng chứng | 1 = có nhưng thiếu điều kiện/ngữ cảnh | 2 = đủ để trả lời và truy nguồn
+
+==========================================================================================
+CÂU q18 (test, dien_dat_lai): Doanh nghiệp tư nhân có được phát hành chứng khoán không?
+Đáp án kỳ vọng (gold): (theo evidence: Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào...)
+Evidence gold: Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào (gold: ldn-2020-congbao-p2 tr.52)
+
+--- A_fixed | EvHit@3=CÓ
+  rank 1 | A_fixed#ldn-2020-congbao-p2#p052#f01 | score=0.7541 | page=52 | evidence_hit=True
+  TEXT: trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công ty 
+trong phạm vi số vốn đã cam kết góp; 
+b) Không được tham gia quản lý công ty, không được tiến hành công việc kinh 
+doanh nhân danh công ty; 
+c) Tuân thủ Điều lệ công ty, nghị quyết và quyết định của Hội đồng thành viên; 
+d) Nghĩa vụ khác theo quy định của Luật này và Điều lệ công ty. 
+ 
+Chương VII 
+DOANH NGHIỆP TƯ NHÂN 
+ 
+Điều 188. Doanh nghiệp tư nhân 
+1. Doanh nghiệp tư nhân là doanh nghiệp do một cá nhân làm chủ và tự chịu 
+trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp. 
+2. Doanh nghiệp tư nhân k
+
+  rank 2 | A_fixed#ldn-2020-congbao-p2#p002#f01 | score=0.7273 | page=2 | evidence_hit=False
+  TEXT: ại 
+chúng là chào bán không thông qua phương tiện thông tin đại chúng cho dưới 100 
+nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp và đáp ứng điều kiện 
+về đối tượng mua trái phiếu riêng lẻ như sau: 
+a) Nhà đầu tư chiến lược đối với trái phiếu chuyển đổi riêng lẻ và trái phiếu 
+kèm theo chứng quyền riêng lẻ; 
+b) Nhà đầu tư chứng khoán chuyên nghiệp đối với trái phiểu chuyển đổi riêng 
+lẻ, trái phiếu kèm theo chứng quyền riêng lẻ và loại trái phiếu riêng lẻ khác. 
+3. Công ty cổ phần không phải là công ty đại chúng chào bán trái phiếu riêng 
+lẻ phải đáp ứng các điều kiện sau đây: 
+a) 
+
+  rank 3 | A_fixed#ldn-2020-congbao-p1#p092#f00 | score=0.7215 | page=92 | evidence_hit=False
+  TEXT: đăng ký cổ đông; kể từ thời điểm đó, người mua cổ phần trở thành cổ đông của 
+công ty. 
+5. Sau khi cổ phần được thanh toán đầy đủ, công ty phát hành và giao cổ phiếu 
+cho người mua; trường hợp không giao cổ phiếu, các thông tin về cổ đông quy 
+định tại khoản 2 Điều 122 của Luật này được ghi vào sổ đăng ký cổ đông để chứng 
+thực quyền sở hữu cổ phần của cổ đông đó trong công ty. 
+Điều 125. Chào bán cổ phần riêng lẻ 
+1. Chào bán cổ phần riêng lẻ của công ty cổ phần không phải là công ty đại 
+chúng phải đáp ứng các điều kiện sau đây: 
+a) Không chào bán thông qua phương tiện thông tin đại chúng; 
+
+
+--- B_para | EvHit@3=CÓ
+  rank 1 | B_para#ldn-2020-congbao-p2#p052#g01 | score=0.7867 | page=52 | evidence_hit=True
+  TEXT: .
+Chương VII 
+DOANH NGHIỆP TƯ NHÂN
+Điều 188. Doanh nghiệp tư nhân 
+1. Doanh nghiệp tư nhân là doanh nghiệp do một cá nhân làm chủ và tự chịu 
+trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp. 
+2. Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào. 
+3. Mỗi cá nhân chỉ được quyền thành lập một doanh nghiệp tư nhân. Chủ 
+doanh nghiệp tư nhân không được đồng thời là chủ hộ kinh doanh, thành viên hợp 
+danh của công ty hợp danh.
+
+  rank 2 | B_para#ldn-2020-congbao-p1#p088#g01 | score=0.7312 | page=88 | evidence_hit=False
+  TEXT: h nghiệp phải có chữ ký của người đại diện theo pháp luật hoặc các 
+cổ đông phổ thông của công ty đó. 
+2. Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ 
+phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. 
+3. Trong thời hạn 03 năm kể từ ngày công ty được cấp Giấy chứng nhận đăng 
+ký doanh nghiệp, cổ phần phổ thông của cổ đông sáng lập được tự do chuyển 
+nhượng cho cổ đông sáng lập khác và chỉ được chuyển nhượng cho người không 
+phải là cổ đông sáng lập nếu được sự chấp thuận của Đại hội đồng cổ đông. 
+Trường hợp này, cổ đông sáng lập dự định chuyển n
+
+  rank 3 | B_para#ldn-2020-congbao-p2#p065#g00 | score=0.7289 | page=65 | evidence_hit=False
+  TEXT: c) Chủ doanh nghiệp tư nhân có thỏa thuận bằng văn bản với các bên của hợp 
+đồng chưa thanh lý về việc công ty được chuyển đổi tiếp nhận và tiếp tục thực hiện 
+các hợp đồng đó; 
+d) Chủ doanh nghiệp tư nhân cam kết bằng văn bản hoặc có thỏa thuận bằng 
+văn bản với các thành viên góp vốn khác về việc tiếp nhận và sử dụng lao động 
+hiện có của doanh nghiệp tư nhân. 
+2. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh xem xét và cấp Giấy chứng nhận đăng ký doanh nghiệp nếu có đủ điều 
+kiện quy định tại khoản 1 Điều này và cập nhật tình trạng pháp lý của doanh 
+ngh
+
+--- C_para_flt | EvHit@3=CÓ
+  rank 1 | C_para_flt#ldn-2020-congbao-p2#p052#g01 | score=0.7867 | page=52 | evidence_hit=True
+  TEXT: .
+Chương VII 
+DOANH NGHIỆP TƯ NHÂN
+Điều 188. Doanh nghiệp tư nhân 
+1. Doanh nghiệp tư nhân là doanh nghiệp do một cá nhân làm chủ và tự chịu 
+trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp. 
+2. Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào. 
+3. Mỗi cá nhân chỉ được quyền thành lập một doanh nghiệp tư nhân. Chủ 
+doanh nghiệp tư nhân không được đồng thời là chủ hộ kinh doanh, thành viên hợp 
+danh của công ty hợp danh.
+
+  rank 2 | C_para_flt#ldn-2020-congbao-p1#p088#g01 | score=0.7312 | page=88 | evidence_hit=False
+  TEXT: h nghiệp phải có chữ ký của người đại diện theo pháp luật hoặc các 
+cổ đông phổ thông của công ty đó. 
+2. Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ 
+phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. 
+3. Trong thời hạn 03 năm kể từ ngày công ty được cấp Giấy chứng nhận đăng 
+ký doanh nghiệp, cổ phần phổ thông của cổ đông sáng lập được tự do chuyển 
+nhượng cho cổ đông sáng lập khác và chỉ được chuyển nhượng cho người không 
+phải là cổ đông sáng lập nếu được sự chấp thuận của Đại hội đồng cổ đông. 
+Trường hợp này, cổ đông sáng lập dự định chuyển n
+
+  rank 3 | C_para_flt#ldn-2020-congbao-p2#p065#g00 | score=0.7289 | page=65 | evidence_hit=False
+  TEXT: c) Chủ doanh nghiệp tư nhân có thỏa thuận bằng văn bản với các bên của hợp 
+đồng chưa thanh lý về việc công ty được chuyển đổi tiếp nhận và tiếp tục thực hiện 
+các hợp đồng đó; 
+d) Chủ doanh nghiệp tư nhân cam kết bằng văn bản hoặc có thỏa thuận bằng 
+văn bản với các thành viên góp vốn khác về việc tiếp nhận và sử dụng lao động 
+hiện có của doanh nghiệp tư nhân. 
+2. Trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh xem xét và cấp Giấy chứng nhận đăng ký doanh nghiệp nếu có đủ điều 
+kiện quy định tại khoản 1 Điều này và cập nhật tình trạng pháp lý của doanh 
+ngh
+
+==========================================================================================
+CÂU q19 (test, dieu_kien): Công ty không còn đủ số thành viên tối thiểu trong bao lâu thì bị giải thể?
+Đáp án kỳ vọng (gold): (theo evidence: không còn đủ số lượng thành viên tối thiểu theo quy định của Luật này trong thời hạn 06 tháng liên t...)
+Evidence gold: không còn đủ số lượng thành viên tối thiểu theo quy định của Luật này trong thời hạn 06 tháng liên tục (gold: ldn-2020-congbao-p2 tr.66)
+
+--- A_fixed | EvHit@3=CÓ
+  rank 1 | A_fixed#ldn-2020-congbao-p2#p066#f01 | score=0.7981 | page=66 | evidence_hit=True
+  TEXT: nh, của Hội đồng thành viên, 
+chủ sở hữu công ty đối với công ty trách nhiệm hữu hạn, của Đại hội đồng cổ đông 
+đối với công ty cổ phần; 
+c) Công ty không còn đủ số lượng thành viên tối thiểu theo quy định của Luật 
+này trong thời hạn 06 tháng liên tục mà không làm thủ tục chuyển đổi loại hình 
+doanh nghiệp; 
+d) Bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, trừ trường hợp Luật 
+Quản lý thuế có quy định khác. 
+2. Doanh nghiệp chỉ được giải thể khi bảo đảm thanh toán hết các khoản 
+nợ, nghĩa vụ tài sản khác và không trong quá trình giải quyết tranh chấp tại 
+Tòa án hoặc Trọng tài. Người quản 
+
+  rank 2 | A_fixed#ldn-2020-congbao-p1#p037#f02 | score=0.7792 | page=37 | evidence_hit=False
+  TEXT: theo quy định tại khoản 6 Điều này không được Hội 
+đồng thành viên chấp thuận làm thành viên; 
+c) Thành viên công ty là tổ chức giải thể hoặc phá sản. 
+5. Trường hợp phần vốn góp của thành viên công ty là cá nhân chết mà không 
+có người thừa kế, người thừa kế từ chối nhận thừa kế hoặc bị truất quyền thừa kế 
+thì phần vốn góp đó được giải quyết theo quy định của pháp luật về dân sự.
+
+  rank 3 | A_fixed#ldn-2020-congbao-p1#p069#f01 | score=0.7708 | page=69 | evidence_hit=False
+  TEXT: kiến nghị cơ quan đại diện chủ sở hữu công ty sửa đổi, 
+bổ sung Điều lệ công ty, thông qua phương hướng phát triển công ty, thông qua 
+báo cáo tài chính hằng năm, tổ chức lại hoặc giải thể công ty phải được gửi đến các 
+thành viên chậm nhất là 05 ngày làm việc trước ngày họp. 
+3. Thông báo mời họp Hội đồng thành viên có thể gửi bằng giấy mời, điện 
+thoại, fax, phương tiện điện tử hoặc phương thức khác do Điều lệ công ty quy định 
+và được gửi trực tiếp đến từng thành viên Hội đồng thành viên và người được mời 
+dự họp. Nội dung thông báo mời họp phải xác định rõ thời gian, địa điểm và 
+chương tr
+
+--- B_para | EvHit@3=KHÔNG
+  rank 1 | B_para#ldn-2020-congbao-p1#p043#g01 | score=0.7767 | page=43 | evidence_hit=False
+  TEXT: g được quá 
+30 ngày kể từ ngày khai mạc cuộc họp đó. 
+Điều 59. Nghị quyết, quyết định của Hội đồng thành viên 
+1. Hội đồng thành viên thông qua nghị quyết, quyết định thuộc thẩm quyền 
+bằng biểu quyết tại cuộc họp, lấy ý kiến bằng văn bản hoặc hình thức khác do Điều 
+lệ công ty quy định. 
+2. Trường hợp Điều lệ công ty không có quy định khác thì nghị quyết, quyết 
+định về các vấn đề sau đây phải được thông qua bằng biểu quyết tại cuộc họp Hội 
+đồng thành viên: 
+a) Sửa đổi, bổ sung nội dung Điều lệ công ty; 
+b) Quyết định phương hướng phát triển công ty; 
+c) Bầu, miễn nhiệm, bãi nhiệm Chủ tịch H
+
+  rank 2 | B_para#ldn-2020-congbao-p1#p038#g01 | score=0.7619 | page=38 | evidence_hit=False
+  TEXT: ịnh hoặc thành viên công ty là pháp nhân thương mại bị Tòa án 
+cấm kinh doanh, cấm hoạt động trong một số lĩnh vực nhất định thuộc phạm vi 
+ngành, nghề kinh doanh của công ty thì thành viên đó không được hành nghề, làm 
+công việc đã bị cấm tại công ty đó hoặc công ty tạm ngừng, chấm dứt kinh doanh 
+ngành, nghề có liên quan theo quyết định của Tòa án. 
+Điều 54. Cơ cấu tổ chức quản lý công ty 
+1. Công ty trách nhiệm hữu hạn hai thành viên trở lên có Hội đồng thành viên, 
+Chủ tịch Hội đồng thành viên, Giám đốc hoặc Tổng giám đốc. 
+2. Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh ngh
+
+  rank 3 | B_para#ldn-2020-congbao-p2#p023#g01 | score=0.7615 | page=23 | evidence_hit=False
+  TEXT: ty gây 
+thiệt hại cho công ty thì các thành viên tán thành thông qua nghị quyết, quyết 
+định đó phải cùng liên đới chịu trách nhiệm cá nhân về nghị quyết, quyết định đó 
+và phải đền bù thiệt hại cho công ty; thành viên phản đối thông qua nghị quyết, 
+quyết định nói trên được miễn trừ trách nhiệm. Trường hợp này, cổ đông của 
+công ty có quyền yêu cầu Tòa án đình chỉ thực hiện hoặc hủy bỏ nghị quyết, 
+quyết định nói trên. 
+Điều 154. Nhiệm kỳ và số lượng thành viên Hội đồng quản trị 
+1. Hội đồng quản trị có từ 03 đến 11 thành viên. Điều lệ công ty quy định cụ 
+thể số lượng thành viên Hội đồng quả
+
+--- C_para_flt | EvHit@3=KHÔNG
+  rank 1 | C_para_flt#ldn-2020-congbao-p1#p043#g01 | score=0.7767 | page=43 | evidence_hit=False
+  TEXT: g được quá 
+30 ngày kể từ ngày khai mạc cuộc họp đó. 
+Điều 59. Nghị quyết, quyết định của Hội đồng thành viên 
+1. Hội đồng thành viên thông qua nghị quyết, quyết định thuộc thẩm quyền 
+bằng biểu quyết tại cuộc họp, lấy ý kiến bằng văn bản hoặc hình thức khác do Điều 
+lệ công ty quy định. 
+2. Trường hợp Điều lệ công ty không có quy định khác thì nghị quyết, quyết 
+định về các vấn đề sau đây phải được thông qua bằng biểu quyết tại cuộc họp Hội 
+đồng thành viên: 
+a) Sửa đổi, bổ sung nội dung Điều lệ công ty; 
+b) Quyết định phương hướng phát triển công ty; 
+c) Bầu, miễn nhiệm, bãi nhiệm Chủ tịch H
+
+  rank 2 | C_para_flt#ldn-2020-congbao-p1#p038#g01 | score=0.7619 | page=38 | evidence_hit=False
+  TEXT: ịnh hoặc thành viên công ty là pháp nhân thương mại bị Tòa án 
+cấm kinh doanh, cấm hoạt động trong một số lĩnh vực nhất định thuộc phạm vi 
+ngành, nghề kinh doanh của công ty thì thành viên đó không được hành nghề, làm 
+công việc đã bị cấm tại công ty đó hoặc công ty tạm ngừng, chấm dứt kinh doanh 
+ngành, nghề có liên quan theo quyết định của Tòa án. 
+Điều 54. Cơ cấu tổ chức quản lý công ty 
+1. Công ty trách nhiệm hữu hạn hai thành viên trở lên có Hội đồng thành viên, 
+Chủ tịch Hội đồng thành viên, Giám đốc hoặc Tổng giám đốc. 
+2. Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh ngh
+
+  rank 3 | C_para_flt#ldn-2020-congbao-p2#p023#g01 | score=0.7615 | page=23 | evidence_hit=False
+  TEXT: ty gây 
+thiệt hại cho công ty thì các thành viên tán thành thông qua nghị quyết, quyết 
+định đó phải cùng liên đới chịu trách nhiệm cá nhân về nghị quyết, quyết định đó 
+và phải đền bù thiệt hại cho công ty; thành viên phản đối thông qua nghị quyết, 
+quyết định nói trên được miễn trừ trách nhiệm. Trường hợp này, cổ đông của 
+công ty có quyền yêu cầu Tòa án đình chỉ thực hiện hoặc hủy bỏ nghị quyết, 
+quyết định nói trên. 
+Điều 154. Nhiệm kỳ và số lượng thành viên Hội đồng quản trị 
+1. Hội đồng quản trị có từ 03 đến 11 thành viên. Điều lệ công ty quy định cụ 
+thể số lượng thành viên Hội đồng quả
+
+==========================================================================================
+CÂU q20 (test, truc_tiep): Trường hợp nào một công ty được coi là công ty mẹ của công ty khác?
+Đáp án kỳ vọng (gold): (theo Sở hữu trên 50% vốn điều lệ hoặc tổng số cổ phần phổ thông của công ty đó... — xem gold_source/gold_page)
+Evidence gold: Sở hữu trên 50% vốn điều lệ hoặc tổng số cổ phần phổ thông của công ty đó (gold: ldn-2020-congbao-p2 tr.55)
+
+--- A_fixed | EvHit@3=KHÔNG
+  rank 1 | A_fixed#ldn-2020-congbao-p2#p056#f01 | score=0.8020 | page=56 | evidence_hit=False
+  TEXT: c giữa công ty mẹ và công ty con đều 
+phải được thiết lập và thực hiện độc lập, bình đẳng theo điều kiện áp dụng đối với 
+chủ thể pháp lý độc lập. 
+3. Trường hợp công ty mẹ can thiệp ngoài thẩm quyền của chủ sở hữu, thành 
+viên hoặc cổ đông và buộc công ty con phải thực hiện hoạt động kinh doanh trái 
+với thông lệ kinh doanh bình thường hoặc thực hiện hoạt động không sinh lợi mà 
+không đền bù hợp lý trong năm tài chính có liên quan, gây thiệt hại cho công ty 
+con thì công ty mẹ phải chịu trách nhiệm về thiệt hại đó. 
+4. Người quản lý công ty mẹ chịu trách nhiệm về việc can thiệp buộc công ty 
+
+
+  rank 2 | A_fixed#ldn-2020-congbao-p2#p056#f02 | score=0.7837 | page=56 | evidence_hit=False
+  TEXT: ên, cổ đông có sở hữu ít nhất 01% vốn 
+điều lệ của công ty con có quyền nhân danh chính mình hoặc nhân danh công ty 
+con yêu cầu công ty mẹ đền bù thiệt hại cho công ty con. 
+6. Trường hợp hoạt động kinh doanh theo quy định tại khoản 3 Điều này do 
+công ty con thực hiện đem lại lợi ích cho công ty con khác của cùng một công ty 
+mẹ thì công ty con được hưởng lợi phải liên đới cùng công ty mẹ hoàn trả khoản 
+lợi được hưởng cho công ty con bị thiệt hại.
+
+  rank 3 | A_fixed#ldn-2020-congbao-p2#p024#f02 | score=0.7772 | page=24 | evidence_hit=False
+  TEXT: ng ty, công ty mẹ 
+hoặc công ty con của công ty ít nhất trong 03 năm liền trước đó; 
+b) Không phải là người đang hưởng lương, thù lao từ công ty, trừ các khoản 
+phụ cấp mà thành viên Hội đồng quản trị được hưởng theo quy định; 
+c) Không phải là người có vợ hoặc chồng, bố đẻ, bố nuôi, mẹ đẻ, mẹ nuôi, con 
+đẻ, con nuôi, anh ruột, chị ruột, em ruột là cổ đông lớn của công ty; là người quản 
+lý của công ty hoặc công ty con của công ty;
+
+--- B_para | EvHit@3=KHÔNG
+  rank 1 | B_para#ldn-2020-congbao-p1#p063#g02 | score=0.8084 | page=63 | evidence_hit=False
+  TEXT: công ty con;
+
+  rank 2 | B_para#ldn-2020-congbao-p2#p056#g01 | score=0.7815 | page=56 | evidence_hit=False
+  TEXT: iện hoạt động không sinh lợi mà 
+không đền bù hợp lý trong năm tài chính có liên quan, gây thiệt hại cho công ty 
+con thì công ty mẹ phải chịu trách nhiệm về thiệt hại đó. 
+4. Người quản lý công ty mẹ chịu trách nhiệm về việc can thiệp buộc công ty 
+con thực hiện hoạt động kinh doanh theo quy định tại khoản 3 Điều này phải liên 
+đới cùng công ty mẹ chịu trách nhiệm về thiệt hại đó. 
+5. Trường hợp công ty mẹ không đền bù cho công ty con theo quy định tại 
+khoản 3 Điều này thì chủ nợ hoặc thành viên, cổ đông có sở hữu ít nhất 01% vốn 
+điều lệ của công ty con có quyền nhân danh chính mình hoặc nh
+
+  rank 3 | B_para#ldn-2020-congbao-p2#p056#g00 | score=0.7628 | page=56 | evidence_hit=False
+  TEXT: 2. Công ty con không được đầu tư mua cổ phần, góp vốn vào công ty mẹ. Các 
+công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ 
+phần để sở hữu chéo lẫn nhau. 
+3. Các công ty con có cùng một công ty mẹ là doanh nghiệp có sở hữu ít nhất 
+65% vốn nhà nước không được cùng nhau góp vốn, mua cổ phần của doanh nghiệp 
+khác hoặc để thành lập doanh nghiệp mới theo quy định của Luật này. 
+4. Chính phủ quy định chi tiết khoản 2 và khoản 3 Điều này. 
+Điều 196. Quyền, nghĩa vụ và trách nhiệm của công ty mẹ đối với công ty con 
+1. Tùy thuộc vào loại hình pháp lý của công ty con, cô
+
+--- C_para_flt | EvHit@3=CÓ
+  rank 1 | C_para_flt#ldn-2020-congbao-p2#p056#g01 | score=0.7815 | page=56 | evidence_hit=False
+  TEXT: iện hoạt động không sinh lợi mà 
+không đền bù hợp lý trong năm tài chính có liên quan, gây thiệt hại cho công ty 
+con thì công ty mẹ phải chịu trách nhiệm về thiệt hại đó. 
+4. Người quản lý công ty mẹ chịu trách nhiệm về việc can thiệp buộc công ty 
+con thực hiện hoạt động kinh doanh theo quy định tại khoản 3 Điều này phải liên 
+đới cùng công ty mẹ chịu trách nhiệm về thiệt hại đó. 
+5. Trường hợp công ty mẹ không đền bù cho công ty con theo quy định tại 
+khoản 3 Điều này thì chủ nợ hoặc thành viên, cổ đông có sở hữu ít nhất 01% vốn 
+điều lệ của công ty con có quyền nhân danh chính mình hoặc nh
+
+  rank 2 | C_para_flt#ldn-2020-congbao-p2#p056#g00 | score=0.7628 | page=56 | evidence_hit=False
+  TEXT: 2. Công ty con không được đầu tư mua cổ phần, góp vốn vào công ty mẹ. Các 
+công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ 
+phần để sở hữu chéo lẫn nhau. 
+3. Các công ty con có cùng một công ty mẹ là doanh nghiệp có sở hữu ít nhất 
+65% vốn nhà nước không được cùng nhau góp vốn, mua cổ phần của doanh nghiệp 
+khác hoặc để thành lập doanh nghiệp mới theo quy định của Luật này. 
+4. Chính phủ quy định chi tiết khoản 2 và khoản 3 Điều này. 
+Điều 196. Quyền, nghĩa vụ và trách nhiệm của công ty mẹ đối với công ty con 
+1. Tùy thuộc vào loại hình pháp lý của công ty con, cô
+
+  rank 3 | C_para_flt#ldn-2020-congbao-p2#p055#g01 | score=0.7427 | page=55 | evidence_hit=True
+  TEXT: Điều 194. Tập đoàn kinh tế, tổng công ty 
+1. Tập đoàn kinh tế, tổng công ty thuộc các thành phần kinh tế là nhóm công 
+ty có mối quan hệ với nhau thông qua sở hữu cổ phần, phần vốn góp hoặc liên 
+kết khác. Tập đoàn kinh tế, tổng công ty không phải là một loại hình doanh 
+nghiệp, không có tư cách pháp nhân, không phải đăng ký thành lập theo quy 
+định của Luật này. 
+2. Tập đoàn kinh tế, tổng công ty có công ty mẹ, công ty con và các công ty 
+thành viên khác. Công ty mẹ, công ty con và mỗi công ty thành viên trong tập đoàn 
+kinh tế, tổng công ty có quyền và nghĩa vụ của doanh nghiệp độc lập theo 
+
+==========================================================================================
+CÂU q21 (test, truc_tiep): Công ty cổ phần cần ít nhất bao nhiêu cổ đông khi thành lập?
+Đáp án kỳ vọng (gold): (theo evidence: số lượng cổ đông tối thiểu là 03 và không hạn chế số lượng tối đa...)
+Evidence gold: số lượng cổ đông tối thiểu là 03 và không hạn chế số lượng tối đa (gold: ldn-2020-congbao-p1 tr.80)
+
+--- A_fixed | EvHit@3=KHÔNG
+  rank 1 | A_fixed#ldn-2020-congbao-p1#p088#f01 | score=0.8476 | page=88 | evidence_hit=False
+  TEXT: cổ đông sáng lập 
+1. Công ty cổ phần mới thành lập phải có ít nhất 03 cổ đông sáng lập. Công ty 
+cổ phần được chuyển đổi từ doanh nghiệp nhà nước hoặc từ công ty trách nhiệm 
+hữu hạn hoặc được chia, tách, hợp nhất, sáp nhập từ công ty cổ phần khác không 
+nhất thiết phải có cổ đông sáng lập; trường hợp này, Điều lệ công ty trong hồ sơ 
+đăng ký doanh nghiệp phải có chữ ký của người đại diện theo pháp luật hoặc các 
+cổ đông phổ thông của công ty đó. 
+2. Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ 
+phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. 
+3
+
+  rank 2 | A_fixed#ldn-2020-congbao-p1#p088#f00 | score=0.7906 | page=88 | evidence_hit=False
+  TEXT: Trường hợp có cổ đông rút một phần hoặc toàn bộ vốn cổ phần đã góp trái với quy 
+định tại khoản này thì cổ đông đó và người có lợi ích liên quan trong công ty phải 
+cùng liên đới chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công 
+ty trong phạm vi giá trị cổ phần đã bị rút và các thiệt hại xảy ra. 
+3. Tuân thủ Điều lệ công ty và quy chế quản lý nội bộ của công ty. 
+4. Chấp hành nghị quyết, quyết định của Đại hội đồng cổ đông, Hội đồng 
+quản trị. 
+5. Bảo mật các thông tin được công ty cung cấp theo quy định tại Điều lệ công 
+ty và pháp luật; chỉ sử dụng thông tin được cung cấp đ
+
+  rank 3 | A_fixed#ldn-2020-congbao-p1#p083#f00 | score=0.7756 | page=83 | evidence_hit=False
+  TEXT: hợp số cổ phần chưa thanh toán đã được bán hết trong thời hạn này; đăng ký thay 
+đổi cổ đông sáng lập. 
+4. Cổ đông chưa thanh toán hoặc chưa thanh toán đủ số cổ phần đã đăng ký 
+mua phải chịu trách nhiệm tương ứng với tổng mệnh giá cổ phần đã đăng ký mua 
+đối với các nghĩa vụ tài chính của công ty phát sinh trong thời hạn trước ngày công 
+ty đăng ký điều chỉnh vốn điều lệ theo quy định tại điểm d khoản 3 Điều này. 
+Thành viên Hội đồng quản trị, người đại diện theo pháp luật phải chịu trách nhiệm 
+liên đới về các thiệt hại phát sinh do không thực hiện hoặc không thực hiện đúng 
+quy định tại kho
+
+--- B_para | EvHit@3=CÓ
+  rank 1 | B_para#ldn-2020-congbao-p1#p088#g00 | score=0.7917 | page=88 | evidence_hit=False
+  TEXT: Trường hợp có cổ đông rút một phần hoặc toàn bộ vốn cổ phần đã góp trái với quy 
+định tại khoản này thì cổ đông đó và người có lợi ích liên quan trong công ty phải 
+cùng liên đới chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công 
+ty trong phạm vi giá trị cổ phần đã bị rút và các thiệt hại xảy ra. 
+3. Tuân thủ Điều lệ công ty và quy chế quản lý nội bộ của công ty. 
+4. Chấp hành nghị quyết, quyết định của Đại hội đồng cổ đông, Hội đồng 
+quản trị. 
+5. Bảo mật các thông tin được công ty cung cấp theo quy định tại Điều lệ công 
+ty và pháp luật; chỉ sử dụng thông tin được cung cấp đ
+
+  rank 2 | B_para#ldn-2020-congbao-p1#p080#g01 | score=0.7832 | page=80 | evidence_hit=True
+  TEXT: ầu tư, giảm vốn hoặc thoái vốn 
+đầu tư tại các công ty khác. 
+2. Chính phủ quy định chi tiết Điều này.
+Chương V 
+CÔNG TY CỔ PHẦN
+Điều 111. Công ty cổ phần 
+1. Công ty cổ phần là doanh nghiệp, trong đó: 
+a) Vốn điều lệ được chia thành nhiều phần bằng nhau gọi là cổ phần; 
+b) Cổ đông có thể là tổ chức, cá nhân; số lượng cổ đông tối thiểu là 03 và 
+không hạn chế số lượng tối đa;
+
+  rank 3 | B_para#ldn-2020-congbao-p1#p088#g01 | score=0.7795 | page=88 | evidence_hit=False
+  TEXT: h nghiệp phải có chữ ký của người đại diện theo pháp luật hoặc các 
+cổ đông phổ thông của công ty đó. 
+2. Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ 
+phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. 
+3. Trong thời hạn 03 năm kể từ ngày công ty được cấp Giấy chứng nhận đăng 
+ký doanh nghiệp, cổ phần phổ thông của cổ đông sáng lập được tự do chuyển 
+nhượng cho cổ đông sáng lập khác và chỉ được chuyển nhượng cho người không 
+phải là cổ đông sáng lập nếu được sự chấp thuận của Đại hội đồng cổ đông. 
+Trường hợp này, cổ đông sáng lập dự định chuyển n
+
+--- C_para_flt | EvHit@3=CÓ
+  rank 1 | C_para_flt#ldn-2020-congbao-p1#p088#g00 | score=0.7917 | page=88 | evidence_hit=False
+  TEXT: Trường hợp có cổ đông rút một phần hoặc toàn bộ vốn cổ phần đã góp trái với quy 
+định tại khoản này thì cổ đông đó và người có lợi ích liên quan trong công ty phải 
+cùng liên đới chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công 
+ty trong phạm vi giá trị cổ phần đã bị rút và các thiệt hại xảy ra. 
+3. Tuân thủ Điều lệ công ty và quy chế quản lý nội bộ của công ty. 
+4. Chấp hành nghị quyết, quyết định của Đại hội đồng cổ đông, Hội đồng 
+quản trị. 
+5. Bảo mật các thông tin được công ty cung cấp theo quy định tại Điều lệ công 
+ty và pháp luật; chỉ sử dụng thông tin được cung cấp đ
+
+  rank 2 | C_para_flt#ldn-2020-congbao-p1#p080#g01 | score=0.7832 | page=80 | evidence_hit=True
+  TEXT: ầu tư, giảm vốn hoặc thoái vốn 
+đầu tư tại các công ty khác. 
+2. Chính phủ quy định chi tiết Điều này.
+Chương V 
+CÔNG TY CỔ PHẦN
+Điều 111. Công ty cổ phần 
+1. Công ty cổ phần là doanh nghiệp, trong đó: 
+a) Vốn điều lệ được chia thành nhiều phần bằng nhau gọi là cổ phần; 
+b) Cổ đông có thể là tổ chức, cá nhân; số lượng cổ đông tối thiểu là 03 và 
+không hạn chế số lượng tối đa;
+
+  rank 3 | C_para_flt#ldn-2020-congbao-p1#p088#g01 | score=0.7795 | page=88 | evidence_hit=False
+  TEXT: h nghiệp phải có chữ ký của người đại diện theo pháp luật hoặc các 
+cổ đông phổ thông của công ty đó. 
+2. Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ 
+phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. 
+3. Trong thời hạn 03 năm kể từ ngày công ty được cấp Giấy chứng nhận đăng 
+ký doanh nghiệp, cổ phần phổ thông của cổ đông sáng lập được tự do chuyển 
+nhượng cho cổ đông sáng lập khác và chỉ được chuyển nhượng cho người không 
+phải là cổ đông sáng lập nếu được sự chấp thuận của Đại hội đồng cổ đông. 
+Trường hợp này, cổ đông sáng lập dự định chuyển n
+
+==========================================================================================
+CÂU q22 (test, dieu_kien): Giấy chứng nhận đăng ký doanh nghiệp bị mất hoặc hư hỏng thì được xử lý như thế nào?
+Đáp án kỳ vọng (gold): (theo evidence: Trường hợp Giấy chứng nhận đăng ký doanh nghiệp bị mất, bị hư hỏng hoặc bị hủy hoại dưới hình thức k...)
+Evidence gold: Trường hợp Giấy chứng nhận đăng ký doanh nghiệp bị mất, bị hư hỏng hoặc bị hủy hoại dưới hình thức khác, doanh nghiệp được cấp lại Giấy chứng nhận đăng ký doanh nghiệp (gold: ldn-2020-congbao-p1 tr.21)
+
+--- A_fixed | EvHit@3=CÓ
+  rank 1 | A_fixed#ldn-2020-congbao-p1#p021#f00 | score=0.8044 | page=21 | evidence_hit=True
+  TEXT: doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 3
+
+  rank 2 | A_fixed#ldn-2020-congbao-p1#p022#f01 | score=0.7750 | page=22 | evidence_hit=False
+  TEXT: nhận hồ sơ, Cơ quan đăng ký 
+kinh doanh có trách nhiệm xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận 
+đăng ký doanh nghiệp mới; trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh 
+doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh 
+nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới thì 
+phải thông báo bằng văn bản cho doanh nghiệp và nêu rõ lý do. 
+4. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo 
+quyết định của Tòa án hoặc Trọng tài thực hiện theo trình tự, thủ tục sau đây: 
+a) Người đề nghị đăng ký thay đổi nội dung Giấ
+
+  rank 3 | A_fixed#ldn-2020-congbao-p1#p022#f02 | score=0.7718 | page=22 | evidence_hit=False
+  TEXT: ồ sơ đăng ký phải 
+gồm bản sao bản án, quyết định của Tòa án đã có hiệu lực pháp luật hoặc phán 
+quyết của Trọng tài có hiệu lực; 
+b) Trong thời hạn 03 ngày làm việc kể từ ngày nhận được đề nghị đăng ký quy 
+định tại điểm a khoản này, Cơ quan đăng ký kinh doanh có trách nhiệm xem xét và 
+cấp Giấy chứng nhận đăng ký doanh nghiệp mới theo nội dung bản án, quyết định 
+của Tòa án đã có hiệu lực pháp luật hoặc phán quyết của Trọng tài có hiệu lực; 
+trường hợp hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh doanh phải thông báo bằng văn
+
+--- B_para | EvHit@3=CÓ
+  rank 1 | B_para#ldn-2020-congbao-p1#p021#g00 | score=0.7938 | page=21 | evidence_hit=True
+  TEXT: doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 3
+
+  rank 2 | B_para#ldn-2020-congbao-p2#p068#g01 | score=0.7863 | page=68 | evidence_hit=False
+  TEXT: thực hiện theo trình tự, thủ 
+tục sau đây: 
+1. Cơ quan đăng ký kinh doanh phải thông báo tình trạng doanh nghiệp 
+đang làm thủ tục giải thể trên Cổng thông tin quốc gia về đăng ký doanh 
+nghiệp đồng thời với việc ra quyết định thu hồi Giấy chứng nhận đăng ký 
+doanh nghiệp hoặc ngay sau khi nhận được quyết định giải thể của Tòa án đã 
+có hiệu lực pháp luật. Kèm theo thông báo phải đăng tải quyết định thu hồi 
+Giấy chứng nhận đăng ký doanh nghiệp hoặc quyết định của Tòa án đã có hiệu 
+lực pháp luật; 
+2. Trong thời hạn 10 ngày kể từ ngày nhận được quyết định thu hồi Giấy 
+chứng nhận đăng ký doanh
+
+  rank 3 | B_para#ldn-2020-congbao-p1#p022#g01 | score=0.7694 | page=22 | evidence_hit=False
+  TEXT: báo bằng văn bản cho doanh nghiệp và nêu rõ lý do. 
+4. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo 
+quyết định của Tòa án hoặc Trọng tài thực hiện theo trình tự, thủ tục sau đây: 
+a) Người đề nghị đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh 
+nghiệp gửi đề nghị đăng ký thay đổi đến Cơ quan đăng ký kinh doanh có thẩm 
+quyền trong thời hạn 15 ngày kể từ ngày bản án, quyết định của Tòa án có hiệu lực 
+pháp luật hoặc phán quyết của Trọng tài có hiệu lực. Kèm theo hồ sơ đăng ký phải 
+gồm bản sao bản án, quyết định của Tòa án đã có hiệu lực pháp luật hoặc phán 
+quy
+
+--- C_para_flt | EvHit@3=CÓ
+  rank 1 | C_para_flt#ldn-2020-congbao-p1#p021#g00 | score=0.7938 | page=21 | evidence_hit=True
+  TEXT: doanh phải thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho người thành 
+lập doanh nghiệp. Trường hợp từ chối đăng ký doanh nghiệp thì phải thông báo 
+bằng văn bản cho người thành lập doanh nghiệp và nêu rõ lý do. 
+6. Chính phủ quy định về hồ sơ, trình tự, thủ tục, liên thông trong đăng ký 
+doanh nghiệp. 
+Điều 27. Cấp Giấy chứng nhận đăng ký doanh nghiệp 
+1. Doanh nghiệp được cấp Giấy chứng nhận đăng ký doanh nghiệp khi có đủ 
+các điều kiện sau đây: 
+a) Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; 
+b) Tên của doanh nghiệp được đặt theo đúng quy định tại các điều 37, 3
+
+  rank 2 | C_para_flt#ldn-2020-congbao-p2#p068#g01 | score=0.7863 | page=68 | evidence_hit=False
+  TEXT: thực hiện theo trình tự, thủ 
+tục sau đây: 
+1. Cơ quan đăng ký kinh doanh phải thông báo tình trạng doanh nghiệp 
+đang làm thủ tục giải thể trên Cổng thông tin quốc gia về đăng ký doanh 
+nghiệp đồng thời với việc ra quyết định thu hồi Giấy chứng nhận đăng ký 
+doanh nghiệp hoặc ngay sau khi nhận được quyết định giải thể của Tòa án đã 
+có hiệu lực pháp luật. Kèm theo thông báo phải đăng tải quyết định thu hồi 
+Giấy chứng nhận đăng ký doanh nghiệp hoặc quyết định của Tòa án đã có hiệu 
+lực pháp luật; 
+2. Trong thời hạn 10 ngày kể từ ngày nhận được quyết định thu hồi Giấy 
+chứng nhận đăng ký doanh
+
+  rank 3 | C_para_flt#ldn-2020-congbao-p1#p022#g01 | score=0.7694 | page=22 | evidence_hit=False
+  TEXT: báo bằng văn bản cho doanh nghiệp và nêu rõ lý do. 
+4. Đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo 
+quyết định của Tòa án hoặc Trọng tài thực hiện theo trình tự, thủ tục sau đây: 
+a) Người đề nghị đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh 
+nghiệp gửi đề nghị đăng ký thay đổi đến Cơ quan đăng ký kinh doanh có thẩm 
+quyền trong thời hạn 15 ngày kể từ ngày bản án, quyết định của Tòa án có hiệu lực 
+pháp luật hoặc phán quyết của Trọng tài có hiệu lực. Kèm theo hồ sơ đăng ký phải 
+gồm bản sao bản án, quyết định của Tòa án đã có hiệu lực pháp luật hoặc phán 
+quy
+

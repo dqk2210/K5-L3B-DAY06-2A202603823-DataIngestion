@@ -1,0 +1,239 @@
+{
+  "metrics": {
+    "overall": {
+      "hit_at_1": {
+        "n": 66,
+        "hits": 30,
+        "rate": 0.4545
+      },
+      "evidence_hit_at_3": {
+        "n": 66,
+        "hits": 49,
+        "rate": 0.7424
+      },
+      "filter_compliance": 0.8611,
+      "questions": 66
+    },
+    "by_strategy": {
+      "A_fixed": {
+        "hit_at_1": {
+          "n": 22,
+          "hits": 9,
+          "rate": 0.4091
+        },
+        "evidence_hit_at_3": {
+          "n": 22,
+          "hits": 16,
+          "rate": 0.7273
+        },
+        "filter_compliance": 0.8334,
+        "questions": 22
+      },
+      "B_para": {
+        "hit_at_1": {
+          "n": 22,
+          "hits": 10,
+          "rate": 0.4545
+        },
+        "evidence_hit_at_3": {
+          "n": 22,
+          "hits": 16,
+          "rate": 0.7273
+        },
+        "filter_compliance": 0.75,
+        "questions": 22
+      },
+      "C_para_flt": {
+        "hit_at_1": {
+          "n": 22,
+          "hits": 11,
+          "rate": 0.5
+        },
+        "evidence_hit_at_3": {
+          "n": 22,
+          "hits": 17,
+          "rate": 0.7727
+        },
+        "filter_compliance": 1.0,
+        "questions": 22
+      }
+    },
+    "by_split": {
+      "dev": {
+        "hit_at_1": {
+          "n": 51,
+          "hits": 23,
+          "rate": 0.451
+        },
+        "evidence_hit_at_3": {
+          "n": 51,
+          "hits": 39,
+          "rate": 0.7647
+        },
+        "filter_compliance": 0.8889,
+        "questions": 51
+      },
+      "test": {
+        "hit_at_1": {
+          "n": 15,
+          "hits": 7,
+          "rate": 0.4667
+        },
+        "evidence_hit_at_3": {
+          "n": 15,
+          "hits": 10,
+          "rate": 0.6667
+        },
+        "filter_compliance": 0.7778,
+        "questions": 15
+      }
+    },
+    "by_strategy_split": {
+      "A_fixed/dev": {
+        "hit_at_1": {
+          "n": 17,
+          "hits": 6,
+          "rate": 0.3529
+        },
+        "evidence_hit_at_3": {
+          "n": 17,
+          "hits": 13,
+          "rate": 0.7647
+        },
+        "filter_compliance": 0.8889,
+        "questions": 17
+      },
+      "A_fixed/test": {
+        "hit_at_1": {
+          "n": 5,
+          "hits": 3,
+          "rate": 0.6
+        },
+        "evidence_hit_at_3": {
+          "n": 5,
+          "hits": 3,
+          "rate": 0.6
+        },
+        "filter_compliance": 0.6667,
+        "questions": 5
+      },
+      "B_para/dev": {
+        "hit_at_1": {
+          "n": 17,
+          "hits": 8,
+          "rate": 0.4706
+        },
+        "evidence_hit_at_3": {
+          "n": 17,
+          "hits": 13,
+          "rate": 0.7647
+        },
+        "filter_compliance": 0.7778,
+        "questions": 17
+      },
+      "B_para/test": {
+        "hit_at_1": {
+          "n": 5,
+          "hits": 2,
+          "rate": 0.4
+        },
+        "evidence_hit_at_3": {
+          "n": 5,
+          "hits": 3,
+          "rate": 0.6
+        },
+        "filter_compliance": 0.6667,
+        "questions": 5
+      },
+      "C_para_flt/dev": {
+        "hit_at_1": {
+          "n": 17,
+          "hits": 9,
+          "rate": 0.5294
+        },
+        "evidence_hit_at_3": {
+          "n": 17,
+          "hits": 13,
+          "rate": 0.7647
+        },
+        "filter_compliance": 1.0,
+        "questions": 17
+      },
+      "C_para_flt/test": {
+        "hit_at_1": {
+          "n": 5,
+          "hits": 2,
+          "rate": 0.4
+        },
+        "evidence_hit_at_3": {
+          "n": 5,
+          "hits": 4,
+          "rate": 0.8
+        },
+        "filter_compliance": 1.0,
+        "questions": 5
+      }
+    }
+  },
+  "run": {
+    "ran_at": "2026-11-14T05:26:42+00:00",
+    "corpus": {
+      "pages_loaded": 168,
+      "content_pages": 167,
+      "source": "D:\\AI20k\\K5-L3B-DAY06-2A202603823-DataIngestion\\data\\extracted\\pages.jsonl",
+      "documents": [
+        "ldn-2020-congbao-p1",
+        "ldn-2020-congbao-p2"
+      ]
+    },
+    "embedding": {
+      "model": "google/embeddinggemma-2",
+      "dimensions": 768,
+      "provider": "local (sentence-transformers), cost 0 USD"
+    },
+    "store": {
+      "backend": "postgresql+pgvector",
+      "table": "chunks"
+    },
+    "strategies": {
+      "params": {
+        "A_fixed": "size=1000,overlap=150",
+        "B_para": "max_size=1200",
+        "C_para_flt": "max_size=1200 + metadata filter"
+      },
+      "stats": {
+        "A_fixed": {
+          "chunks_built": 456,
+          "chunks_stored": 456,
+          "avg_chars": 809,
+          "embed_seconds": 166.9,
+          "applies_query_filter": false
+        },
+        "B_para": {
+          "chunks_built": 341,
+          "chunks_stored": 341,
+          "avg_chars": 954,
+          "embed_seconds": 149.4,
+          "applies_query_filter": false
+        },
+        "C_para_flt": {
+          "chunks_built": 341,
+          "chunks_stored": 341,
+          "avg_chars": 954,
+          "embed_seconds": 145.4,
+          "applies_query_filter": true
+        }
+      },
+      "trace_files": {
+        "A_fixed": "results\\traces_A_fixed.jsonl",
+        "B_para": "results\\traces_B_para.jsonl",
+        "C_para_flt": "results\\traces_C_para_flt.jsonl"
+      }
+    },
+    "benchmark": {
+      "path": "D:\\AI20k\\K5-L3B-DAY06-2A202603823-DataIngestion\\benchmark\\questions.jsonl",
+      "questions": 22
+    },
+    "top_k": 3
+  }
+}

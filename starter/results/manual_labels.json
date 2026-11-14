@@ -1,0 +1,84 @@
+{
+  "methodology": "Nhãn chấm tay được soạn nháp với hỗ trợ AI (GLM qua OpenCode) đọc trực tiếp nội dung chunk trong results/scoring_material.txt và chấm theo đúng rubric GUIDE.md; học viên (tác giả pipeline) rà soát, chỉnh sửa nếu cần và chịu trách nhiệm cuối. Người chấm trùng tác giả pipeline nên có nguy cơ thiên lệch — đã ghi nhận trong báo cáo. Không dùng LLM judge tự động trên toàn bộ trace; mỗi nhãn kèm lý do đọc được.",
+  "coherence_rubric": "0 = bị cắt giữa ý/thiếu chủ thể làm không hiểu; 1 = hiểu một phần, thiếu ngữ cảnh; 2 = tự hiểu được và giữ trọn ý",
+  "grounding_rubric": "0 = không có bằng chứng; 1 = có nhưng thiếu điều kiện/ngữ cảnh cần thiết; 2 = đủ để trả lời và truy nguồn",
+  "coherence": {
+    "q01": {
+      "A_fixed": [1, "Điều 26 k1+a,b,c trọn nhưng k2 bị cắt giữa câu ('Cổng thông tin quốc gia v') — mất ý nơi nộp hồ sơ qua mạng"],
+      "B_para": [2, "Điều 26 k1 trọn, k2 đủ ý; chỉ câu kế tiếp lửng ở đuôi chunk"],
+      "C_para_flt": [2, "Như B_para (cùng chunk g00)"]
+    },
+    "q02": {
+      "A_fixed": [2, "Điều 27 k1 (a-d) + k2 trọn vẹn; đầu chunk lửng giữa câu Điều 26 nhưng không ảnh hưởng hiểu Điều 27"],
+      "B_para": [2, "Điều 27 trọn + mở đầu Điều 28; kết thúc lửng ở mục '3.'"],
+      "C_para_flt": [2, "Như B_para (chunk g00 chứa evidence được chọn)"]
+    },
+    "q03": {
+      "A_fixed": [2, "Mở đầu đúng 'Điều 29' — Điều 29 trọn vẹn, đọc độc lập hiểu ngay"],
+      "B_para": [2, "Điều 29 trọn + Điều 30 k1-k3 đầy đủ hơn"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q05": {
+      "A_fixed": [1, "Điều 37 k1 trọn nhưng k2 bị cắt giữa câu — mất cách viết loại hình doanh nghiệp"],
+      "B_para": [2, "Điều 37 k1 trọn + k2 đầy đủ (chỉ cụm cuối 'DNTN' lửng)"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q06": {
+      "A_fixed": [2, "Mở đầu đúng 'Điều 42' — Điều 42 trọn vẹn là đoạn ngắn tự hoàn chỉnh"],
+      "B_para": [2, "Điều 42 trọn + Điều 43 trọn"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q07": {
+      "A_fixed": [2, "Có tiêu đề Chương III + Mục 1 + Điều 46 k1 trọn (evidence giữa chunk)"],
+      "B_para": [2, "Điều 46 k1 trọn với ngữ cảnh Chương III/Mục 1"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q08": {
+      "A_fixed": [2, "Điều 51 k1 (a-c) + k2 trọn; k3 cắt đuôi nhưng ý chính mua lại theo giá thị trường còn đủ"],
+      "B_para": [2, "Điều 51 k1-k3 trọn vẹn"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q09": {
+      "A_fixed": [2, "Mở đầu đúng 'Điều 64' — k1,k2,k3 trọn, evidence trọn câu"],
+      "B_para": [2, "Điều 64 trọn + Điều 65 k1-k2"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q10": {
+      "A_fixed": [2, "Mở đầu đúng 'Điều 69' — Điều 69 + Điều 70 trọn"],
+      "B_para": [2, "Điều 69 + 70 trọn + Điều 71 mở đầu"],
+      "C_para_flt": [2, "Như B_para"]
+    },
+    "q11": {
+      "A_fixed": [2, "Tiêu đề Mục 2 + Điều 74 k1-k3 trọn (evidence ở k3); k4 cắt đuôi nhưng không chứa gold"],
+      "B_para": [2, "Mở đầu đúng 'Điều 74' — cả bốn khoản trọn"],
+      "C_para_flt": [2, "Như B_para"]
+    }
+  },
+  "grounding": {
+    "q18": {
+      "A_fixed": [2, "Rank-1 chứa Điều 188 với k2 'không được phát hành bất kỳ loại chứng khoán nào' — đủ trả lời và truy nguồn"],
+      "B_para": [2, "Rank-1 là Điều 188 trọn k1-k3 (k2 nêu rõ cấm phát hành chứng khoán) + ngữ cảnh Chương VII"],
+      "C_para_flt": [2, "Như B_para (rank-1 cùng chunk)"]
+    },
+    "q19": {
+      "A_fixed": [2, "Rank-1 chứa Điều 207 k1c (06 tháng liên tục) + k2 điều kiện giải thể — đủ trả lời và truy nguồn"],
+      "B_para": [0, "Top-3 là Điều 59, Điều 54, Điều 154 — không có Điều 207"],
+      "C_para_flt": [0, "Như B_para"]
+    },
+    "q20": {
+      "A_fixed": [0, "Top-3 chỉ có Điều 195 k3-k6 (can thiệp/trách nhiệm công ty mẹ) — thiếu k1 định nghĩa ba trường hợp sở hữu trên 50%"],
+      "B_para": [0, "Rank-1 là mảnh chunk 63 ký tự; rank-2/3 là Điều 195 k3-k6 — vẫn thiếu k1 định nghĩa"],
+      "C_para_flt": [2, "Rank-3 chứa Điều 194 k2 và Điều 195 k1 (evidence 'Sở hữu trên 50%...') — đủ định nghĩa công ty mẹ"]
+    },
+    "q21": {
+      "A_fixed": [2, "Rank-1 chứa Điều 112 k1 'ít nhất 03 cổ đông sáng lập' khi thành lập — bằng chứng tương đương gold (Điều 111), người chấm xác nhận hợp lệ"],
+      "B_para": [2, "Rank-2 chứa Điều 111 k1a-b (gold trang 80): 'số lượng cổ đông tối thiểu là 03 và không hạn chế số lượng tối đa'"],
+      "C_para_flt": [2, "Như B_para (rank-2 cùng chunk)"]
+    },
+    "q22": {
+      "A_fixed": [2, "Rank-1 chứa Điều 27 k2 (trang 21): mất/hư hỏng được cấp lại GCN và nộp lệ phí — đủ trả lời"],
+      "B_para": [2, "Rank-1 cùng chunk Điều 27 g00 — như A_fixed"],
+      "C_para_flt": [2, "Như B_para"]
+    }
+  }
+}
