@@ -175,6 +175,8 @@ def by_article(pages: list[DocumentPage]) -> list[Chunk]:
                 text=text,
                 metadata={
                     "strategy": STRATEGY_ARTICLE,
+                    "section": f"chuong_{article['chuong'].lower()}" if article["chuong"] else "",
+                    "section_title": article["chuong_title"],
                     "dieu": article["dieu"],
                     "dieu_title": article["title"],
                     "chuong": article["chuong"],
